@@ -18,7 +18,7 @@ npm run preview
 
 ## Deploy en Vercel
 
-El proyecto es una SPA de Vite. `vercel.json` reescribe las rutas del cliente (`/` y `/proyectos`) a `index.html`.
+El proyecto es una SPA de Vite. `vercel.json` reescribe las rutas del cliente a `index.html`.
 
 1. Subí el repo a GitHub.
 2. En [Vercel](https://vercel.com/new), importá el repositorio.

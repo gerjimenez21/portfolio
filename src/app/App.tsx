@@ -3,9 +3,6 @@ import {
   createBrowserRouter,
   Outlet,
   Link,
-  useLocation,
-  NavLink,
-  useNavigate,
 } from "react-router";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "motion/react";
@@ -16,7 +13,6 @@ import {
   Mail,
   ChevronDown,
   Send,
-  ArrowUpRight,
 } from "lucide-react";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
 import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
@@ -26,9 +22,6 @@ import imgLouderband from "@/imports/image-1.png";
 import imgBillboard from "@/imports/image-2.png";
 import imgSolitaire from "@/imports/HomePage/8b9da8de3c76f8e3e13fac112f3cea13ac4982bf.png";
 import imgHabitium from "@/imports/HomePage/b4c856bb09b435bee9853ef545943ab16b390e2c.png";
-import imgOrbit from "@/imports/PortfolioPageDesign/7858bc74ee889666bc8a7325b8d77f3a7ab35d11.png";
-import imgNodo from "@/imports/PortfolioPageDesign/ffa16177584957f4ab57bbc19c76f76718cb9263.png";
-import imgPulse from "@/imports/PortfolioPageDesign/17edbd85937f1535cd3219b721cb95e5947a4dae.png";
 
 /* ─── Shared data ────────────────────────────────────────────────────── */
 
@@ -89,69 +82,6 @@ export const EXPERIENCE = [
       "Combiné investigación cualitativa (surveys) y cuantitativa (seguimiento de métricas) para validar decisiones de diseño y alinear cada iteración con los objetivos de negocio.",
     ],
     tags: ["React", "Vue.js", "SCSS", "Figma", "GraphQL"],
-  },
-];
-
-export const PROJECTS = [
-  {
-    title: "Orbit — App de finanzas personales",
-    description:
-      "Aplicación fullstack con análisis de gastos con IA, sincronización bancaria Open Banking y presupuestos adaptativos. Más de 3k usuarios activos en los primeros 2 meses.",
-    tags: ["Next.js", "Prisma", "OpenAI", "Stripe", "Vercel"],
-    img: imgOrbit,
-    year: "2024",
-    type: "Product Design · Mobile",
-  },
-  {
-    title: "Nodo — Plataforma de colaboración",
-    description:
-      "Editor colaborativo en tiempo real con presencia de cursores, comentarios inline y revisión de código embebida. Stack monorepo con Turborepo.",
-    tags: ["React", "Yjs", "WebRTC", "Hono", "Turso"],
-    img: imgNodo,
-    year: "2023",
-    type: "Product Design · Web",
-  },
-  {
-    title: "Pulse — Monitoring OSS",
-    description:
-      "Herramienta open-source de monitoreo de uptime con alertas multi-canal, status pages públicas y métricas P95/P99. Más de 400 ⭐ en GitHub.",
-    tags: [
-      "Go",
-      "React",
-      "ClickHouse",
-      "Prometheus",
-      "Grafana",
-    ],
-    img: imgPulse,
-    year: "2023",
-    type: "Design System · Web",
-  },
-  {
-    title: "Buscador Unificado — Humand",
-    description:
-      "Búsqueda centralizada que unifica resultados de distintos módulos (Noticias, Feed, Grupos) en una sola experiencia sin perder consistencia entre secciones.",
-    tags: ["Figma", "Design Thinking", "UX Research"],
-    img: imgOrbit,
-    year: "2024",
-    type: "Product Design · Mobile",
-  },
-  {
-    title: "Timetracker — Humand",
-    description:
-      "Herramienta de gestión del tiempo para equipos HR, construida desde cero. Permitió a los clientes reemplazar soluciones externas y consolidar su stack en Humand.",
-    tags: ["Figma", "UI Design", "Jitter"],
-    img: imgNodo,
-    year: "2023",
-    type: "Product Design · Web",
-  },
-  {
-    title: "Design System — Instakash",
-    description:
-      "Sistema de diseño que mantiene consistencia visual y de interacción entre todos los productos de la casa de cambio digital, coordinado con desarrollo y producto.",
-    tags: ["Figma", "Design Tokens", "SCSS"],
-    img: imgPulse,
-    year: "2022",
-    type: "Design System · Multi-platform",
   },
 ];
 
@@ -568,82 +498,10 @@ export function SectionLabel({
   );
 }
 
-export function ProjectCard({
-  project,
-  index,
-}: {
-  project: (typeof PROJECTS)[number];
-  index: number;
-}) {
-  return (
-    <FadeIn delay={index * 0.08}>
-      <article className="group flex flex-col rounded-[12px] border border-[rgba(103,100,242,0.1)] bg-[#0f0e1a] overflow-hidden transition-all hover:border-[rgba(103,100,242,0.4)] hover:shadow-[0_0_40px_rgba(103,100,242,0.08)]">
-        <div className="relative h-48 overflow-hidden bg-[#1a1828]">
-          <img
-            src={project.img}
-            alt={project.title}
-            className="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-90"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to bottom, rgba(0,0,0,0) 40%, #0f0e1a 100%)",
-            }}
-          />
-          <span
-            className="absolute top-3 right-3 text-[11px] text-[#7b78a8] bg-[#09090f]/70 backdrop-blur-sm px-2.5 py-1 rounded-full border border-[rgba(103,100,242,0.15)]"
-            style={{ fontFamily: "'Open Sans', sans-serif" }}
-          >
-            {project.year}
-          </span>
-        </div>
-        <div className="flex flex-col flex-1 p-5 gap-3">
-          <div>
-            <p
-              className="text-[11px] text-[#8276ca] tracking-wide mb-1"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
-            >
-              {project.type}
-            </p>
-            <h3
-              className="font-bold text-[16px] leading-[22px] text-[#f0eff8]"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
-            >
-              {project.title}
-            </h3>
-          </div>
-          <p
-            className="text-[#7b78a8] text-[14px] leading-[22.75px] flex-1"
-            style={{ fontFamily: "'Open Sans', sans-serif" }}
-          >
-            {project.description}
-          </p>
-          <div className="flex flex-wrap gap-1.5">
-            {project.tags.map((t) => (
-              <Tag key={t} label={t} />
-            ))}
-          </div>
-          <a
-            href="#"
-            className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#8276ca] mt-1 transition-all hover:gap-2.5"
-            style={{ fontFamily: "'Open Sans', sans-serif" }}
-          >
-            Ver proyecto <ArrowUpRight className="size-3" />
-          </a>
-        </div>
-      </article>
-    </FadeIn>
-  );
-}
-
 /* ─── Shared layout ──────────────────────────────────────────────────── */
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
-  const isProjects = location.pathname === "/proyectos";
 
   useEffect(() => {
     function onScroll() {
@@ -657,27 +515,16 @@ function Navbar() {
 
   function handleHashLink(e: React.MouseEvent, hash: string) {
     e.preventDefault();
-    if (isProjects) {
-      navigate("/").then(() => {
-        setTimeout(() => {
-          document
-            .querySelector(hash)
-            ?.scrollIntoView({ behavior: "smooth" });
-        }, 80);
-      });
-    } else {
-      document
-        .querySelector(hash)
-        ?.scrollIntoView({ behavior: "smooth" });
-    }
+    document
+      .querySelector(hash)
+      ?.scrollIntoView({ behavior: "smooth" });
   }
 
   const NAV_LINKS = [
-    { label: "Sobre mí", href: "#about", to: null },
-    { label: "Experiencia", href: "#experience", to: null },
-    { label: "Proyectos", href: null, to: "/proyectos" },
-    { label: "Skills", href: "#skills", to: null },
-    { label: "Contacto", href: "#contact", to: null },
+    { label: "Sobre mí", href: "#about" },
+    { label: "Experiencia", href: "#experience" },
+    { label: "Skills", href: "#skills" },
+    { label: "Contacto", href: "#contact" },
   ];
 
   return (
@@ -696,34 +543,16 @@ function Navbar() {
         <ul className="hidden md:flex items-center gap-6">
           {NAV_LINKS.map((link) => (
             <li key={link.label}>
-              {link.to ? (
-                <NavLink
-                  to={link.to}
-                  className={({ isActive }) =>
-                    `text-[12px] tracking-[0.3px] transition-colors ${
-                      isActive
-                        ? "text-[#6764f2]"
-                        : "text-[#7b78a8] hover:text-[#f0eff8]"
-                    }`
-                  }
-                  style={{
-                    fontFamily: "'Open Sans', sans-serif",
-                  }}
-                >
-                  {link.label}
-                </NavLink>
-              ) : (
-                <a
-                  href={link.href!}
-                  onClick={(e) => handleHashLink(e, link.href!)}
-                  className="text-[12px] tracking-[0.3px] text-[#7b78a8] hover:text-[#f0eff8] transition-colors"
-                  style={{
-                    fontFamily: "'Open Sans', sans-serif",
-                  }}
-                >
-                  {link.label}
-                </a>
-              )}
+              <a
+                href={link.href}
+                onClick={(e) => handleHashLink(e, link.href)}
+                className="text-[12px] tracking-[0.3px] text-[#7b78a8] hover:text-[#f0eff8] transition-colors"
+                style={{
+                  fontFamily: "'Open Sans', sans-serif",
+                }}
+              >
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
@@ -916,13 +745,6 @@ function Hero() {
             >
               Hablemos
             </a>
-            <Link
-              to="/proyectos"
-              className="inline-flex items-center gap-2 px-[25px] py-[13px] rounded-[8px] border border-[rgba(103,100,242,0.3)] text-[#BBB5DF] text-[14px] font-medium transition-all hover:border-[rgba(103,100,242,0.6)] hover:bg-[rgba(103,100,242,0.05)]"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
-            >
-              Ver proyectos
-            </Link>
           </motion.div>
         </div>
 
@@ -1205,53 +1027,6 @@ function OtherProjectsSection() {
           )}
         </div>
       </FadeIn>
-    </section>
-  );
-}
-
-function ProjectsPreview() {
-  return (
-    <section
-      id="projects"
-      className="bg-[rgba(15,14,26,0.6)] w-full py-24"
-    >
-      <div className="px-6 md:px-16 lg:px-24 max-w-5xl mx-auto">
-        <FadeIn>
-          <div className="flex items-center justify-between mb-12">
-            <SectionLabel>Proyectos</SectionLabel>
-            <Link
-              to="/proyectos"
-              className="hidden sm:inline-flex items-center gap-1.5 text-[12px] text-[#8276ca] font-medium hover:underline"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
-            >
-              Ver todos <ArrowUpRight className="size-3.5" />
-            </Link>
-          </div>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {PROJECTS.slice(0, 3).map((project, i) => (
-            <ProjectCard
-              key={project.title}
-              project={project}
-              index={i}
-            />
-          ))}
-        </div>
-
-        <FadeIn delay={0.3}>
-          <div className="flex justify-center mt-10">
-            <Link
-              to="/proyectos"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-[8px] border border-[rgba(103,100,242,0.3)] text-[#BBB5DF] text-[14px] font-medium transition-all hover:border-[rgba(103,100,242,0.6)] hover:bg-[rgba(103,100,242,0.05)]"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
-            >
-              Ver todos los proyectos{" "}
-              <ArrowUpRight className="size-4" />
-            </Link>
-          </div>
-        </FadeIn>
-      </div>
     </section>
   );
 }
@@ -1615,94 +1390,11 @@ function HomePage() {
       <div className="w-full flex justify-center">
         <OtherProjectsSection />
       </div>
-      <ProjectsPreview />
       <div className="w-full flex justify-center">
         <SkillsSection />
       </div>
       <ContactSection />
     </>
-  );
-}
-
-function ProjectsPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <section className="w-full pt-32 pb-24 px-6 md:px-16 lg:px-24 min-h-screen">
-      {/* Orb */}
-      <div
-        className="pointer-events-none fixed blur-[120px] opacity-10 rounded-full size-[700px] -top-40 -right-40"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(0 -49.497 -49.497 0 350 350)'><stop stop-color='rgba(103,100,242,1)' offset='0'/><stop stop-color='rgba(0,0,0,0)' offset='0.7'/></radialGradient></defs></svg>\")",
-        }}
-      />
-
-      <div className="max-w-5xl mx-auto">
-        <FadeIn>
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-[#7b78a8] text-[13px] hover:text-[#6764f2] transition-colors mb-12"
-            style={{ fontFamily: "'Open Sans', sans-serif" }}
-          >
-            <svg
-              className="size-3.5 rotate-180"
-              fill="none"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M3.33333 8H12.6667"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-              <path
-                d={svgPaths.p1d405500}
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-            </svg>
-            Volver al inicio
-          </Link>
-        </FadeIn>
-
-        <FadeIn delay={0.05}>
-          <SectionLabel>Proyectos</SectionLabel>
-          <h1
-            className="font-extrabold leading-tight text-[#f0eff8] mb-4"
-            style={{
-              fontFamily: "'Open Sans', sans-serif",
-              fontSize: "clamp(36px, 5vw, 56px)",
-            }}
-          >
-            Todo el trabajo
-          </h1>
-          <p
-            className="text-[#7b78a8] text-[16px] leading-[26px] max-w-xl mb-14"
-            style={{ fontFamily: "'Open Sans', sans-serif" }}
-          >
-            Una selección de proyectos de producto, diseño de
-            sistemas e investigación de usuarios a lo largo de
-            mi carrera.
-          </p>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {PROJECTS.map((project, i) => (
-            <ProjectCard
-              key={project.title}
-              project={project}
-              index={i}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -1712,10 +1404,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    children: [
-      { index: true, Component: HomePage },
-      { path: "proyectos", Component: ProjectsPage },
-    ],
+    children: [{ index: true, Component: HomePage }],
   },
 ]);
 
