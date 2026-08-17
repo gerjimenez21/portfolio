@@ -31,6 +31,8 @@ const SOCIAL = {
   linkedin: "https://www.linkedin.com/in/gjjimenez/",
   email: CONTACT_EMAIL,
 };
+const SECTION_PAD = "px-6 md:px-16 lg:px-24";
+const SECTION_INNER = "w-full max-w-5xl mx-auto";
 
 export const EXPERIENCE = [
   {
@@ -535,7 +537,8 @@ function Navbar() {
           : ""
       }`}
     >
-      <nav className="flex items-center justify-between px-6 md:px-[96px] h-16 max-w-[1400px] mx-auto">
+      <nav className={`${SECTION_PAD} w-full`}>
+        <div className={`${SECTION_INNER} flex items-center justify-between h-16`}>
         <Link to="/" className="flex items-center">
           <LogoWordmark />
         </Link>
@@ -583,6 +586,7 @@ function Navbar() {
           </svg>
           Contactar
         </a>
+        </div>
       </nav>
     </header>
   );
@@ -590,12 +594,12 @@ function Navbar() {
 
 function Footer() {
   return (
-    <footer className="relative w-full px-6 md:px-[96px] pb-8 pt-[33px]">
+    <footer className={`relative w-full ${SECTION_PAD} pb-8 pt-[33px]`}>
       <div
         className="absolute border-[rgba(103,100,242,0.1)] border-solid border-t inset-0 pointer-events-none"
         aria-hidden
       />
-      <div className="max-w-[1024px] flex items-center justify-between">
+      <div className={`${SECTION_INNER} flex items-center justify-between`}>
         <span
           className="text-[12px] text-[#7b78a8]"
           style={{ fontFamily: "'Open Sans', sans-serif" }}
@@ -666,7 +670,7 @@ function Hero() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center px-6 md:px-16 lg:px-24 pt-24 pb-16 overflow-hidden w-full"
+      className={`relative min-h-screen flex items-center ${SECTION_PAD} pt-24 pb-16 overflow-hidden w-full`}
     >
       {/* Orbe izquierda */}
       <div
@@ -677,7 +681,7 @@ function Hero() {
         }}
       />
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-stretch gap-12 lg:gap-16">
+      <div className={`relative z-10 ${SECTION_INNER} flex flex-col lg:flex-row items-stretch gap-12 lg:gap-16`}>
         {/* Columna de texto */}
         <div className="flex-1 min-w-0 flex flex-col justify-center">
           <motion.div
@@ -881,8 +885,9 @@ function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="px-6 md:px-16 lg:px-24 py-24 max-w-5xl mx-auto w-full"
+      className={`${SECTION_PAD} py-24 w-full`}
     >
+      <div className={SECTION_INNER}>
       <FadeIn>
         <SectionLabel>Experiencia</SectionLabel>
       </FadeIn>
@@ -905,6 +910,7 @@ function ExperienceSection() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
@@ -977,7 +983,8 @@ function OtherProjectsSection() {
   ];
 
   return (
-    <section className="px-6 md:px-16 lg:px-24 pb-16 max-w-5xl mx-auto w-full">
+    <section className={`${SECTION_PAD} pb-16 w-full`}>
+      <div className={SECTION_INNER}>
       <FadeIn>
         <p
           className="font-normal leading-[16.5px] text-[#7b78a8] text-[11px] tracking-[2px] uppercase"
@@ -1027,6 +1034,7 @@ function OtherProjectsSection() {
           )}
         </div>
       </FadeIn>
+      </div>
     </section>
   );
 }
@@ -1035,8 +1043,9 @@ function SkillsSection() {
   return (
     <section
       id="skills"
-      className="px-6 md:px-16 lg:px-24 py-24 max-w-5xl mx-auto w-full"
+      className={`${SECTION_PAD} py-24 w-full`}
     >
+      <div className={SECTION_INNER}>
       <FadeIn>
         <SectionLabel>Conocimientos</SectionLabel>
       </FadeIn>
@@ -1101,6 +1110,7 @@ function SkillsSection() {
           </FadeIn>
         ))}
       </div>
+      </div>
     </section>
   );
 }
@@ -1160,8 +1170,8 @@ function ContactSection() {
       id="contact"
       className="bg-[rgba(15,14,26,0.6)] w-full py-24"
     >
-      <div className="px-6 md:px-16 lg:px-24 flex flex-col items-center">
-        <div className="w-full max-w-[672px]">
+      <div className={SECTION_PAD}>
+        <div className={SECTION_INNER}>
           <FadeIn>
             <SectionLabel>Contacto</SectionLabel>
             <h2
@@ -1384,15 +1394,9 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <div className="w-full flex justify-center">
-        <ExperienceSection />
-      </div>
-      <div className="w-full flex justify-center">
-        <OtherProjectsSection />
-      </div>
-      <div className="w-full flex justify-center">
-        <SkillsSection />
-      </div>
+      <ExperienceSection />
+      <OtherProjectsSection />
+      <SkillsSection />
       <ContactSection />
     </>
   );
