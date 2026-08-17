@@ -1040,10 +1040,10 @@ function SkillsSection() {
       <FadeIn>
         <SectionLabel>Conocimientos</SectionLabel>
       </FadeIn>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
         {SKILLS.map((group, i) => (
-          <FadeIn key={group.category} delay={i * 0.07}>
-            <div className="relative bg-[#0f0e1a] rounded-[12px] p-[21px] hover:border-[rgba(103,100,242,0.3)] transition-colors">
+          <FadeIn key={group.category} delay={i * 0.07} className="h-full">
+            <div className="relative h-full bg-[#0f0e1a] rounded-[12px] p-[21px] hover:border-[rgba(103,100,242,0.3)] transition-colors">
               <div
                 aria-hidden
                 className="absolute border border-[rgba(103,100,242,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]"
