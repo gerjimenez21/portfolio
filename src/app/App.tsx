@@ -13,6 +13,10 @@ import {
   Mail,
   ChevronDown,
   Send,
+  Workflow,
+  FileText,
+  BarChart3,
+  ArrowUpRight,
 } from "lucide-react";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
 import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
@@ -84,6 +88,34 @@ export const EXPERIENCE = [
       "Combiné investigación cualitativa (surveys) y cuantitativa (seguimiento de métricas) para validar decisiones de diseño y alinear cada iteración con los objetivos de negocio.",
     ],
     tags: ["React", "Vue.js", "SCSS", "Figma", "GraphQL"],
+  },
+];
+
+const PERSONAL_PROJECTS = [
+  {
+    title: "figma-handoff",
+    mono: true,
+    description:
+      "Skill para automatizar el proceso de handoff entre diseño y desarrollo. Genera specs, tokens y documentación lista para entregar al equipo.",
+    tags: ["Figma", "MCP", "Design Tokens"],
+    Icon: Workflow,
+    href: "https://github.com/gerjimenez21/figma-handoff",
+  },
+  {
+    title: "Lotus Reader",
+    mono: false,
+    description:
+      "Lector multiplataforma de PDF, EPUB y CBR con modo lectura, marcadores y soporte de fuentes personalizadas. Construido con Tauri.",
+    tags: ["Tauri", "Rust", "React"],
+    Icon: FileText,
+  },
+  {
+    title: "Libre Chart Manager",
+    mono: false,
+    description:
+      "Herramienta open-source para crear, organizar y exportar gráficos a partir de datos locales. Sin suscripción, sin cloud.",
+    tags: ["React", "D3.js", "IndexedDB"],
+    Icon: BarChart3,
   },
 ];
 
@@ -525,6 +557,7 @@ function Navbar() {
   const NAV_LINKS = [
     { label: "Sobre mí", href: "#about" },
     { label: "Experiencia", href: "#experience" },
+    { label: "Proyectos", href: "#projects" },
     { label: "Skills", href: "#skills" },
     { label: "Contacto", href: "#contact" },
   ];
@@ -1039,6 +1072,88 @@ function OtherProjectsSection() {
   );
 }
 
+function PersonalProjectsSection() {
+  return (
+    <section
+      id="projects"
+      className={`${SECTION_PAD} py-24 w-full`}
+    >
+      <div className={SECTION_INNER}>
+        <FadeIn>
+          <SectionLabel>Proyectos personales</SectionLabel>
+        </FadeIn>
+        <div className="flex flex-col gap-4">
+          {PERSONAL_PROJECTS.map((project, i) => {
+            const CardTag = project.href ? "a" : "article";
+            const linkProps = project.href
+              ? {
+                  href: project.href,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                }
+              : {};
+
+            return (
+            <FadeIn key={project.title} delay={i * 0.07}>
+              <CardTag
+                {...linkProps}
+                className={`relative flex gap-4 sm:gap-5 rounded-[12px] bg-[#0f0e1a] p-5 sm:p-6 transition-colors hover:border-[rgba(103,100,242,0.25)]${
+                  project.href ? " group" : ""
+                }`}
+              >
+                <div
+                  aria-hidden
+                  className="absolute border border-[rgba(103,100,242,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]"
+                />
+                <div className="bg-[rgba(103,100,242,0.1)] rounded-[8px] size-10 flex items-center justify-center shrink-0">
+                  <project.Icon
+                    className="size-5"
+                    strokeWidth={1.75}
+                    color="#8276CA"
+                  />
+                </div>
+                <div className="min-w-0 flex flex-col gap-2">
+                  <h3
+                    className="font-semibold text-[16px] leading-[24px] text-[#c8c6f0] flex items-center gap-2"
+                    style={{
+                      fontFamily: project.mono
+                        ? "ui-monospace, Menlo, Monaco, monospace"
+                        : "'Open Sans', sans-serif",
+                    }}
+                  >
+                    {project.title}
+                    {project.href ? (
+                      <ArrowUpRight
+                        className="size-4 shrink-0 text-[#8276ca] opacity-70 group-hover:opacity-100 transition-opacity"
+                        strokeWidth={2}
+                        aria-hidden
+                      />
+                    ) : null}
+                  </h3>
+                  <p
+                    className="text-[#7b78a8] text-[14px] leading-[22px]"
+                    style={{
+                      fontFamily: "'Open Sans', sans-serif",
+                    }}
+                  >
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    {project.tags.map((t) => (
+                      <Tag key={t} label={t} />
+                    ))}
+                  </div>
+                </div>
+              </CardTag>
+            </FadeIn>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function SkillsSection() {
   return (
     <section
@@ -1396,6 +1511,7 @@ function HomePage() {
       <Hero />
       <ExperienceSection />
       <OtherProjectsSection />
+      <PersonalProjectsSection />
       <SkillsSection />
       <ContactSection />
     </>
