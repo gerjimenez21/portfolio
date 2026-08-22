@@ -16,7 +16,6 @@ import {
   Workflow,
   FileText,
   BarChart3,
-  ArrowUpRight,
 } from "lucide-react";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
 import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
@@ -105,8 +104,15 @@ const PERSONAL_PROJECTS = [
     title: "Lotus Reader",
     mono: false,
     description:
-      "Lector multiplataforma de PDF, EPUB y CBR con modo lectura, marcadores y soporte de fuentes personalizadas. Construido con Tauri.",
-    tags: ["Tauri", "Rust", "React"],
+      "Lector multiplataforma de PDF, EPUB y CBR con modo lectura, marcadores y soporte de fuentes personalizadas. Construido en Python, con Cocoa en Mac.",
+    tags: [
+      "Python",
+      "CustomTkinter",
+      "PyMuPDF",
+      "Pillow",
+      "PyObjC",
+      "PyInstaller",
+    ],
     Icon: FileText,
   },
   {
@@ -114,7 +120,12 @@ const PERSONAL_PROJECTS = [
     mono: false,
     description:
       "Herramienta open-source para crear, organizar y exportar gráficos a partir de datos locales. Sin suscripción, sin cloud.",
-    tags: ["React", "D3.js", "IndexedDB"],
+    tags: [
+      "TypeScript",
+      "React 19",
+      "Vite",
+      "Lightweight Charts",
+    ],
     Icon: BarChart3,
   },
 ];
@@ -506,7 +517,7 @@ export function FadeIn({
 export function Tag({ label }: { label: string }) {
   return (
     <span
-      className="text-[11px] tracking-[0.275px] px-[11px] py-[5px] rounded-[4px] border border-[rgba(103,100,242,0.3)] text-[#BBB5DF] bg-[rgba(103,100,242,0.05)]"
+      className="text-[14px] tracking-[0.275px] px-[11px] py-[5px] rounded-[4px] border border-[rgba(103,100,242,0.3)] text-[#BBB5DF] bg-[rgba(103,100,242,0.05)]"
       style={{ fontFamily: "'Open Sans', sans-serif" }}
     >
       {label}
@@ -1083,24 +1094,9 @@ function PersonalProjectsSection() {
           <SectionLabel>Proyectos personales</SectionLabel>
         </FadeIn>
         <div className="flex flex-col gap-4">
-          {PERSONAL_PROJECTS.map((project, i) => {
-            const CardTag = project.href ? "a" : "article";
-            const linkProps = project.href
-              ? {
-                  href: project.href,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                }
-              : {};
-
-            return (
+          {PERSONAL_PROJECTS.map((project, i) => (
             <FadeIn key={project.title} delay={i * 0.07}>
-              <CardTag
-                {...linkProps}
-                className={`relative flex gap-4 sm:gap-5 rounded-[12px] bg-[#0f0e1a] p-5 sm:p-6 transition-colors hover:border-[rgba(103,100,242,0.25)]${
-                  project.href ? " group" : ""
-                }`}
-              >
+              <article className="relative flex gap-4 sm:gap-5 items-start rounded-[12px] bg-[#0f0e1a] p-5 sm:p-6 transition-colors hover:border-[rgba(103,100,242,0.25)]">
                 <div
                   aria-hidden
                   className="absolute border border-[rgba(103,100,242,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]"
@@ -1112,9 +1108,9 @@ function PersonalProjectsSection() {
                     color="#8276CA"
                   />
                 </div>
-                <div className="min-w-0 flex flex-col gap-2">
+                <div className="min-w-0 flex-1 flex flex-col gap-2">
                   <h3
-                    className="font-semibold text-[16px] leading-[24px] text-[#c8c6f0] flex items-center gap-2"
+                    className="font-semibold text-[16px] leading-[24px] text-[#c8c6f0]"
                     style={{
                       fontFamily: project.mono
                         ? "ui-monospace, Menlo, Monaco, monospace"
@@ -1122,13 +1118,6 @@ function PersonalProjectsSection() {
                     }}
                   >
                     {project.title}
-                    {project.href ? (
-                      <ArrowUpRight
-                        className="size-4 shrink-0 text-[#8276ca] opacity-70 group-hover:opacity-100 transition-opacity"
-                        strokeWidth={2}
-                        aria-hidden
-                      />
-                    ) : null}
                   </h3>
                   <p
                     className="text-[#7b78a8] text-[14px] leading-[22px]"
@@ -1138,16 +1127,29 @@ function PersonalProjectsSection() {
                   >
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 pt-1">
-                    {project.tags.map((t) => (
-                      <Tag key={t} label={t} />
-                    ))}
+                  <div className="flex flex-col gap-6">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((t) => (
+                        <Tag key={t} label={t} />
+                      ))}
+                    </div>
+                    {project.href ? (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="self-start inline-flex items-center gap-2 py-1 text-[#8276ca] text-[14px] font-bold transition-colors hover:text-[#a89cf5]"
+                        style={{ fontFamily: "'Open Sans', sans-serif" }}
+                      >
+                        <Github className="size-5" strokeWidth={2} />
+                        Ir a github
+                      </a>
+                    ) : null}
                   </div>
                 </div>
-              </CardTag>
+              </article>
             </FadeIn>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
