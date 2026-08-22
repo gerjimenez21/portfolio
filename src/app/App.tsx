@@ -96,8 +96,8 @@ const PERSONAL_PROJECTS = [
     title: "figma-handoff",
     mono: true,
     description:
-      "Skill para automatizar el proceso de handoff entre diseño y desarrollo. Genera specs, tokens y documentación lista para entregar al equipo.",
-    tags: ["Figma", "MCP", "Design Tokens"],
+      "Skill para documentar decisiones de diseño sobre el canvas de Figma: cards de nota, annotation chips y conectores. Espejo opcional en Notion.",
+    tags: ["Figma", "MCP", "Notion"],
     Icon: Workflow,
     href: "https://github.com/gerjimenez21/figma-handoff",
   },
