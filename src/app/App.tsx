@@ -17,6 +17,7 @@ import {
   FileText,
   BarChart3,
 } from "lucide-react";
+import { Splash } from "@/app/components/Splash";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
 import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
 import expSvgPaths from "@/imports/ExperienceMargin/svg-j6yg914nz2";
@@ -1531,5 +1532,12 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  const [splashDone, setSplashDone] = useState(false);
+
+  return (
+    <>
+      {!splashDone && <Splash onDone={() => setSplashDone(true)} />}
+      <RouterProvider router={router} />
+    </>
+  );
 }
