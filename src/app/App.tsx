@@ -13,7 +13,6 @@ import {
   Mail,
   ChevronDown,
   Send,
-  FileText,
   BarChart3,
 } from "lucide-react";
 import { Splash } from "@/app/components/Splash";
@@ -26,6 +25,7 @@ import imgBillboard from "@/imports/image-2.png";
 import imgSolitaire from "@/imports/HomePage/8b9da8de3c76f8e3e13fac112f3cea13ac4982bf.png";
 import imgHabitium from "@/imports/HomePage/b4c856bb09b435bee9853ef545943ab16b390e2c.png";
 import imgFigmaLogo from "@/imports/figma-logo.svg";
+import imgLotusLogo from "@/imports/lotus-logo.png";
 
 /* ─── Shared data ────────────────────────────────────────────────────── */
 
@@ -114,7 +114,8 @@ const PERSONAL_PROJECTS = [
       "PyObjC",
       "PyInstaller",
     ],
-    Icon: FileText,
+    Icon: IconLotusLogo,
+    iconFill: true,
   },
   {
     title: "Libre Chart Manager",
@@ -187,6 +188,22 @@ function IconFigmaLogo(_props: {
         src={imgFigmaLogo}
         alt=""
         className="absolute inset-0 size-full"
+      />
+    </span>
+  );
+}
+
+function IconLotusLogo(_props: {
+  className?: string;
+  strokeWidth?: number;
+  color?: string;
+}) {
+  return (
+    <span className="relative block size-10 overflow-clip shrink-0">
+      <img
+        src={imgLotusLogo}
+        alt=""
+        className="absolute inset-0 size-full object-cover"
       />
     </span>
   );
@@ -1118,7 +1135,13 @@ function PersonalProjectsSection() {
                   aria-hidden
                   className="absolute border border-[rgba(103,100,242,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]"
                 />
-                <div className="bg-[rgba(103,100,242,0.1)] rounded-[8px] size-10 flex items-center justify-center shrink-0">
+                <div
+                  className={`rounded-[8px] size-10 flex items-center justify-center shrink-0 overflow-hidden ${
+                    project.iconFill
+                      ? ""
+                      : "bg-[rgba(103,100,242,0.1)]"
+                  }`}
+                >
                   <project.Icon
                     className="size-5"
                     strokeWidth={1.75}
