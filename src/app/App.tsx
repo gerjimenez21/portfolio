@@ -13,7 +13,6 @@ import {
   Mail,
   ChevronDown,
   Send,
-  Workflow,
   FileText,
   BarChart3,
 } from "lucide-react";
@@ -26,6 +25,7 @@ import imgLouderband from "@/imports/image-1.png";
 import imgBillboard from "@/imports/image-2.png";
 import imgSolitaire from "@/imports/HomePage/8b9da8de3c76f8e3e13fac112f3cea13ac4982bf.png";
 import imgHabitium from "@/imports/HomePage/b4c856bb09b435bee9853ef545943ab16b390e2c.png";
+import imgFigmaLogo from "@/imports/figma-logo.svg";
 
 /* ─── Shared data ────────────────────────────────────────────────────── */
 
@@ -98,7 +98,7 @@ const PERSONAL_PROJECTS = [
     description:
       "Skill para documentar decisiones de diseño sobre el canvas de Figma: cards de nota, annotation chips y conectores. Espejo opcional en Notion.",
     tags: ["Figma", "MCP", "Notion"],
-    Icon: Workflow,
+    Icon: IconFigmaLogo,
     href: "https://github.com/gerjimenez21/figma-handoff",
   },
   {
@@ -175,6 +175,22 @@ const SKILLS = [
 ];
 
 /* ─── SVG Icons ──────────────────────────────────────────────────────── */
+
+function IconFigmaLogo(_props: {
+  className?: string;
+  strokeWidth?: number;
+  color?: string;
+}) {
+  return (
+    <span className="relative inline-block h-5 w-[13.342px] overflow-clip shrink-0">
+      <img
+        src={imgFigmaLogo}
+        alt=""
+        className="absolute inset-0 size-full"
+      />
+    </span>
+  );
+}
 
 function IconFrontend() {
   return (
