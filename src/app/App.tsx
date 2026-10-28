@@ -791,7 +791,7 @@ function Hero() {
               fontSize: "clamp(48px, 7vw, 88px)",
             }}
           >
-            Sobre mi
+            Sobre mí
           </motion.h1>
 
           <motion.p
