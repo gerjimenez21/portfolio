@@ -627,7 +627,7 @@ function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => handleHashLink(e, link.href)}
-                className="text-[12px] tracking-[0.3px] text-[#7b78a8] hover:text-[#f0eff8] transition-colors"
+                className="text-[14px] tracking-[0.3px] text-[#7b78a8] hover:text-[#f0eff8] transition-colors"
                 style={{
                   fontFamily: "'Open Sans', sans-serif",
                 }}
@@ -641,7 +641,7 @@ function Navbar() {
         <a
           href="#contact"
           onClick={(e) => handleHashLink(e, "#contact")}
-          className="hidden md:inline-flex items-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[rgba(103,100,242,0.3)] text-[#8276ca] text-[12px] transition-all hover:bg-[rgba(103,100,242,0.1)]"
+          className="hidden md:inline-flex items-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[rgba(103,100,242,0.3)] text-[#8276ca] text-[14px] transition-all hover:bg-[rgba(103,100,242,0.1)]"
           style={{ fontFamily: "'Open Sans', sans-serif" }}
         >
           <svg

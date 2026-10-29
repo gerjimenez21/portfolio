@@ -4,20 +4,29 @@ import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
 const EASE = [0.22, 1, 0.36, 1] as const;
 const EXIT = { duration: 0.6, delay: 2.4, ease: EASE };
 
+const WORDMARK_VIEW = { w: 59.5708, h: 15.9989 };
+const WORDMARK_H = 32;
+const WORDMARK_SCALE = WORDMARK_H / WORDMARK_VIEW.h;
+const WORDMARK_W = WORDMARK_VIEW.w * WORDMARK_SCALE;
+const U_CENTER = 7.1909 * WORDMARK_SCALE;
+const R_CENTER = 55.74135 * WORDMARK_SCALE;
+
 function GooeyLoader() {
-  const duration = 1.7;
-  const ease = [0.45, 0.05, 0.55, 0.95] as const;
+  const duration = 0.95;
+  const startX = U_CENTER;
+  const travel = R_CENTER - U_CENTER;
+  const delayStep = 0.08;
   const dots = [
     { fill: "#6764f2", delay: 0 },
-    { fill: "#7a88f6", delay: 0.18 },
-    { fill: "#8aaef8", delay: 0.36 },
+    { fill: "#7a88f6", delay: delayStep },
+    { fill: "#8aaef8", delay: delayStep * 2 },
   ];
 
   return (
     <svg
-      width="120"
-      height="48"
-      viewBox="0 0 120 48"
+      className="w-full"
+      height="52"
+      viewBox={`0 0 ${WORDMARK_W} 52`}
       overflow="visible"
       aria-hidden
     >
@@ -45,22 +54,22 @@ function GooeyLoader() {
         {dots.map((dot, i) => (
           <motion.circle
             key={i}
-            cx="28"
-            cy="24"
-            r="11"
+            cx={startX}
+            cy="26"
+            r="12"
             fill={dot.fill}
-            style={{ transformOrigin: "28px 24px" }}
-            animate={{
-              x: [0, 24, 48, 24, 0],
-              y: [0, -5, 0, 5, 0],
-              scaleX: [0.92, 1.22, 0.92, 1.22, 0.92],
-              scaleY: [1.08, 0.78, 1.08, 0.78, 1.08],
-            }}
+            animate={{ x: [0, travel] }}
             transition={{
               duration,
               delay: dot.delay,
               repeat: Infinity,
-              ease,
+              repeatType: "reverse",
+              ease: [0.42, 0, 0.58, 1],
+            }}
+            style={{
+              transformOrigin: `${startX}px 26px`,
+              scaleX: 1.48,
+              scaleY: 0.7,
             }}
           />
         ))}
@@ -73,7 +82,7 @@ function Wordmark() {
   return (
     <svg
       fill="none"
-      viewBox="0 0 59.5708 15.9989"
+      viewBox={`0 0 ${WORDMARK_VIEW.w} ${WORDMARK_VIEW.h}`}
       className="h-8 w-auto"
       aria-hidden
     >
@@ -105,7 +114,7 @@ export function Splash({ onDone }: { onDone: () => void }) {
       />
 
       <motion.div
-        className="relative flex flex-col items-center gap-5"
+        className="relative flex w-max flex-col items-stretch gap-5"
         initial={{ filter: "blur(0px)" }}
         animate={{ filter: "blur(12px)" }}
         transition={EXIT}
