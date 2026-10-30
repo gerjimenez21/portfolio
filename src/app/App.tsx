@@ -2,7 +2,6 @@ import {
   RouterProvider,
   createBrowserRouter,
   Outlet,
-  Link,
 } from "react-router";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "motion/react";
@@ -14,6 +13,8 @@ import {
   ChevronDown,
   Send,
   BarChart3,
+  Menu,
+  X,
 } from "lucide-react";
 import { Splash } from "@/app/components/Splash";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
@@ -444,7 +445,8 @@ function LogoWordmark() {
     <svg
       fill="none"
       viewBox="0 0 59.5708 15.9989"
-      className="h-4 w-auto"
+      className="h-6 w-auto"
+      aria-hidden="true"
     >
       <g>
         <path d={newSvgPaths.p3a85180} fill="white" />
@@ -579,92 +581,191 @@ export function SectionLabel({
 
 /* ─── Shared layout ──────────────────────────────────────────────────── */
 
+const NAV_LINKS = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Sobre mí", href: "#about" },
+  { label: "Experiencia", href: "#experience" },
+  { label: "Proyectos", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contacto", href: "#contact" },
+];
+
+const NAV_LINK_CLASS =
+  "inline-flex items-center text-[14px] font-semibold tracking-[0.3px] text-[#8f86d4] rounded-sm transition-colors hover:text-[#f0eff8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c4c2ff]";
+
+const NAV_CONTACT_CLASS =
+  "items-center justify-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[#7673dc] text-[#9d94e0] text-[14px] font-semibold leading-5 transition-colors hover:bg-[rgba(103,100,242,0.12)] hover:text-[#c4c2ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]";
+
+function ContactIcon() {
+  return (
+    <svg
+      className="size-3"
+      fill="none"
+      viewBox="0 0 12 12"
+      aria-hidden="true"
+    >
+      <path
+        d={svgPaths.pcd45380}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d={svgPaths.p9deeb00}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     function onScroll() {
       setScrolled(window.scrollY > 30);
     }
+    onScroll();
     window.addEventListener("scroll", onScroll, {
       passive: true,
     });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  function handleHashLink(e: React.MouseEvent, hash: string) {
-    e.preventDefault();
-    document
-      .querySelector(hash)
-      ?.scrollIntoView({ behavior: "smooth" });
-  }
+  useEffect(() => {
+    if (!menuOpen) return;
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") setMenuOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [menuOpen]);
 
-  const NAV_LINKS = [
-    { label: "Sobre mí", href: "#about" },
-    { label: "Experiencia", href: "#experience" },
-    { label: "Proyectos", href: "#projects" },
-    { label: "Skills", href: "#skills" },
-    { label: "Contacto", href: "#contact" },
-  ];
+  function scrollToTarget(
+    event: React.MouseEvent<HTMLAnchorElement>,
+    hash: string,
+  ) {
+    event.preventDefault();
+    setMenuOpen(false);
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const behavior = reduce ? "auto" : "smooth";
+
+    if (hash === "#inicio") {
+      window.scrollTo({ top: 0, behavior });
+      document.getElementById("inicio")?.focus({ preventScroll: true });
+      return;
+    }
+
+    const target = document.querySelector(hash);
+    if (!(target instanceof HTMLElement)) return;
+    const headerOffset =
+      document.querySelector("header")?.getBoundingClientRect().height ??
+      0;
+    const top =
+      target.getBoundingClientRect().top + window.scrollY - headerOffset;
+    window.scrollTo({ top, behavior });
+  }
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#09090f]/80 backdrop-blur-md border-b border-[rgba(103,100,242,0.1)]"
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        scrolled || menuOpen
+          ? "bg-[#09090f] border-b border-[rgba(103,100,242,0.2)]"
           : ""
       }`}
     >
-      <nav className={`${SECTION_PAD} w-full`}>
-        <div className={`${SECTION_INNER} flex items-center justify-between h-16`}>
-        <Link to="/" className="flex items-center">
-          <LogoWordmark />
-        </Link>
-
-        <ul className="hidden md:flex items-center gap-6">
-          {NAV_LINKS.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                onClick={(e) => handleHashLink(e, link.href)}
-                className="text-[14px] tracking-[0.3px] text-[#7b78a8] hover:text-[#f0eff8] transition-colors"
-                style={{
-                  fontFamily: "'Open Sans', sans-serif",
-                }}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <a
-          href="#contact"
-          onClick={(e) => handleHashLink(e, "#contact")}
-          className="hidden md:inline-flex items-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[rgba(103,100,242,0.3)] text-[#8276ca] text-[14px] transition-all hover:bg-[rgba(103,100,242,0.1)]"
-          style={{ fontFamily: "'Open Sans', sans-serif" }}
+      <nav aria-label="Principal" className={`${SECTION_PAD} w-full`}>
+        <div
+          className={`${SECTION_INNER} flex items-center justify-between py-4`}
         >
-          <svg
-            className="size-3"
-            fill="none"
-            viewBox="0 0 12 12"
+          <a
+            href="#inicio"
+            onClick={(event) => scrollToTarget(event, "#inicio")}
+            className="inline-flex items-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]"
+            aria-label="Ger Jiménez, ir al inicio"
           >
-            <path
-              d={svgPaths.pcd45380}
-              stroke="#8276CA"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d={svgPaths.p9deeb00}
-              stroke="#8276CA"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          Contactar
-        </a>
+            <LogoWordmark />
+          </a>
+
+          <ul className="hidden lg:flex items-center gap-6">
+            {NAV_LINKS.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  onClick={(event) => scrollToTarget(event, link.href)}
+                  className={NAV_LINK_CLASS}
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                  }}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href="#contact"
+            onClick={(event) => scrollToTarget(event, "#contact")}
+            className={`hidden lg:inline-flex ${NAV_CONTACT_CLASS}`}
+            style={{ fontFamily: "'Open Sans', sans-serif" }}
+          >
+            <ContactIcon />
+            Contactar
+          </a>
+
+          <button
+            type="button"
+            className="inline-flex lg:hidden items-center justify-center size-6 rounded-sm text-[#8f86d4] hover:text-[#f0eff8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]"
+            aria-expanded={menuOpen}
+            aria-controls="site-menu"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            {menuOpen ? (
+              <X className="size-6" aria-hidden="true" />
+            ) : (
+              <Menu className="size-6" aria-hidden="true" />
+            )}
+            <span className="sr-only">
+              {menuOpen ? "Cerrar menú" : "Abrir menú"}
+            </span>
+          </button>
         </div>
+
+        {menuOpen && (
+          <div id="site-menu" className={`${SECTION_INNER} lg:hidden pb-4`}>
+            <ul className="flex flex-col">
+              {NAV_LINKS.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    onClick={(event) => scrollToTarget(event, link.href)}
+                    className={`${NAV_LINK_CLASS} w-full py-3`}
+                    style={{
+                      fontFamily: "'Open Sans', sans-serif",
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="#contact"
+              onClick={(event) => scrollToTarget(event, "#contact")}
+              className={`inline-flex ${NAV_CONTACT_CLASS} mt-2 w-full`}
+              style={{ fontFamily: "'Open Sans', sans-serif" }}
+            >
+              <ContactIcon />
+              Contactar
+            </a>
+          </div>
+        )}
       </nav>
     </header>
   );
@@ -699,7 +800,11 @@ function Root() {
   return (
     <div className="bg-[#09090f] min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex flex-col items-start w-full flex-1">
+      <main
+        id="inicio"
+        tabIndex={-1}
+        className="flex flex-col items-start w-full flex-1 outline-none"
+      >
         <Outlet />
       </main>
       <Footer />
@@ -748,7 +853,7 @@ function Hero() {
   return (
     <section
       id="about"
-      className={`relative min-h-screen flex items-center ${SECTION_PAD} pt-24 pb-16 overflow-hidden w-full`}
+      className={`relative min-h-screen flex items-center scroll-mt-18 ${SECTION_PAD} pt-24 pb-16 overflow-hidden w-full`}
     >
       {/* Orbe izquierda */}
       <div
@@ -801,11 +906,12 @@ function Hero() {
             className="text-[#7b78a8] text-[18px] leading-[30px] max-w-xl mb-10"
             style={{ fontFamily: "'Open Sans', sans-serif" }}
           >
-            Diseñador de producto con más de 6 años creando
-            experiencias centradas en el usuario. Experto en
-            diseñar interfaces intuitivas y definir flujos de
-            usuario eficientes y desarrollar sistemas de datos
-            en tiempo real que mejoran la interacción.
+            Soy diseñador de producto con más de 6 años de
+            experiencia creando productos digitales intuitivos
+            y coherentes. Combino UX, design systems e
+            inteligencia artificial para explorar ideas y
+            transformar necesidades en soluciones que puedan
+            crecer.
           </motion.p>
 
           <motion.div
@@ -963,7 +1069,7 @@ function ExperienceSection() {
   return (
     <section
       id="experience"
-      className={`${SECTION_PAD} py-24 w-full`}
+      className={`scroll-mt-18 ${SECTION_PAD} py-24 w-full`}
     >
       <div className={SECTION_INNER}>
       <FadeIn>
@@ -1121,7 +1227,7 @@ function PersonalProjectsSection() {
   return (
     <section
       id="projects"
-      className={`${SECTION_PAD} py-24 w-full`}
+      className={`scroll-mt-18 ${SECTION_PAD} py-24 w-full`}
     >
       <div className={SECTION_INNER}>
         <FadeIn>
@@ -1200,7 +1306,7 @@ function SkillsSection() {
   return (
     <section
       id="skills"
-      className={`${SECTION_PAD} py-24 w-full`}
+      className={`scroll-mt-18 ${SECTION_PAD} py-24 w-full`}
     >
       <div className={SECTION_INNER}>
       <FadeIn>
@@ -1325,7 +1431,7 @@ function ContactSection() {
   return (
     <section
       id="contact"
-      className="bg-[rgba(15,14,26,0.6)] w-full py-24"
+      className="scroll-mt-18 bg-[rgba(15,14,26,0.6)] w-full py-24"
     >
       <div className={SECTION_PAD}>
         <div className={SECTION_INNER}>
