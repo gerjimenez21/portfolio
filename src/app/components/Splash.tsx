@@ -5,76 +5,14 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const EXIT = { duration: 0.6, delay: 2.4, ease: EASE };
 
 const WORDMARK_VIEW = { w: 59.5708, h: 15.9989 };
-const WORDMARK_H = 32;
-const WORDMARK_SCALE = WORDMARK_H / WORDMARK_VIEW.h;
-const WORDMARK_W = WORDMARK_VIEW.w * WORDMARK_SCALE;
-const U_CENTER = 7.1909 * WORDMARK_SCALE;
-const R_CENTER = 55.74135 * WORDMARK_SCALE;
 
-function GooeyLoader() {
-  const duration = 0.95;
-  const startX = U_CENTER;
-  const travel = R_CENTER - U_CENTER;
-  const delayStep = 0.08;
-  const dots = [
-    { fill: "#6764f2", delay: 0 },
-    { fill: "#7a88f6", delay: delayStep },
-    { fill: "#8aaef8", delay: delayStep * 2 },
-  ];
-
+function OrbitLoader() {
   return (
-    <svg
-      className="w-full"
-      height="52"
-      viewBox={`0 0 ${WORDMARK_W} 52`}
-      overflow="visible"
-      aria-hidden
-    >
-      <defs>
-        <filter
-          id="splash-goo"
-          x="-80%"
-          y="-80%"
-          width="260%"
-          height="260%"
-        >
-          <feGaussianBlur
-            in="SourceGraphic"
-            stdDeviation="8"
-            result="blur"
-          />
-          <feColorMatrix
-            in="blur"
-            mode="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-          />
-        </filter>
-      </defs>
-      <g filter="url(#splash-goo)">
-        {dots.map((dot, i) => (
-          <motion.circle
-            key={i}
-            cx={startX}
-            cy="26"
-            r="12"
-            fill={dot.fill}
-            animate={{ x: [0, travel] }}
-            transition={{
-              duration,
-              delay: dot.delay,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: [0.42, 0, 0.58, 1],
-            }}
-            style={{
-              transformOrigin: `${startX}px 26px`,
-              scaleX: 1.48,
-              scaleY: 0.7,
-            }}
-          />
-        ))}
-      </g>
-    </svg>
+    <div className="splash-orbit" aria-hidden>
+      <div className="splash-orbit-inner splash-orbit-one" />
+      <div className="splash-orbit-inner splash-orbit-two" />
+      <div className="splash-orbit-inner splash-orbit-three" />
+    </div>
   );
 }
 
@@ -83,7 +21,7 @@ function Wordmark() {
     <svg
       fill="none"
       viewBox={`0 0 ${WORDMARK_VIEW.w} ${WORDMARK_VIEW.h}`}
-      className="h-8 w-auto"
+      className="relative z-10 h-8 w-auto"
       aria-hidden
     >
       <g>
@@ -108,17 +46,58 @@ export function Splash({ onDone }: { onDone: () => void }) {
       role="status"
       aria-label="Cargando"
     >
+      <style>{`
+        .splash-orbit {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          perspective: 800px;
+        }
+        .splash-orbit-inner {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+        .splash-orbit-one {
+          animation: splash-rotate-one 1s linear infinite;
+          border-bottom: 3px solid #c4c2ff;
+        }
+        .splash-orbit-two {
+          animation: splash-rotate-two 1s linear infinite;
+          border-right: 3px solid #8aaef8;
+        }
+        .splash-orbit-three {
+          animation: splash-rotate-three 1s linear infinite;
+          border-top: 3px solid #6764f2;
+        }
+        @keyframes splash-rotate-one {
+          0% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg); }
+          100% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg); }
+        }
+        @keyframes splash-rotate-two {
+          0% { transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg); }
+          100% { transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg); }
+        }
+        @keyframes splash-rotate-three {
+          0% { transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg); }
+          100% { transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg); }
+        }
+      `}</style>
+
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 size-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6764f2] opacity-20 blur-[120px]"
         aria-hidden
       />
 
       <motion.div
-        className="relative flex w-max flex-col items-stretch gap-5"
+        className="relative flex size-[272px] items-center justify-center"
         initial={{ filter: "blur(0px)" }}
         animate={{ filter: "blur(12px)" }}
         transition={EXIT}
       >
+        <OrbitLoader />
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -126,8 +105,6 @@ export function Splash({ onDone }: { onDone: () => void }) {
         >
           <Wordmark />
         </motion.div>
-
-        <GooeyLoader />
       </motion.div>
     </motion.div>
   );
