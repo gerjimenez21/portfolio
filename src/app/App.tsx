@@ -594,7 +594,7 @@ const NAV_LINK_CLASS =
   "inline-flex items-center text-[14px] font-semibold tracking-[0.3px] text-[#8f86d4] rounded-sm transition-colors hover:text-[#f0eff8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c4c2ff]";
 
 const NAV_CONTACT_CLASS =
-  "items-center justify-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[#7673dc] text-[#9d94e0] text-[14px] font-semibold leading-5 transition-colors hover:bg-[rgba(103,100,242,0.12)] hover:text-[#c4c2ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]";
+  "items-center justify-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[#7673dc] text-white text-[14px] font-semibold leading-5 transition-colors hover:bg-[rgba(103,100,242,0.12)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]";
 
 function ContactIcon() {
   return (
@@ -908,10 +908,10 @@ function Hero() {
           >
             Soy diseñador de producto con más de 6 años de
             experiencia creando productos digitales intuitivos
-            y coherentes. Combino UX, design systems e
-            inteligencia artificial para explorar ideas y
-            transformar necesidades en soluciones que puedan
-            crecer.
+            y coherentes. Combino UX y design systems para
+            transformar necesidades en soluciones escalables,
+            e integro inteligencia artificial para potenciar
+            mi proceso de diseño.
           </motion.p>
 
           <motion.div
