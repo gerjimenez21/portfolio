@@ -27,6 +27,9 @@ import imgSolitaire from "@/imports/HomePage/8b9da8de3c76f8e3e13fac112f3cea13ac4
 import imgHabitium from "@/imports/HomePage/b4c856bb09b435bee9853ef545943ab16b390e2c.png";
 import imgFigmaLogo from "@/imports/figma-logo.svg";
 import imgLotusLogo from "@/imports/lotus-logo.png";
+import imgLogoHumand from "@/imports/logo-humand.png";
+import imgLogoNonconformist from "@/imports/logo-nonconformist.png";
+import imgLogoInstakash from "@/imports/logo-instakash.png";
 
 /* ─── Shared data ────────────────────────────────────────────────────── */
 
@@ -45,6 +48,7 @@ export const EXPERIENCE = [
     role: "Product Designer",
     period: "Nov 2023 — Presente",
     location: "Remote",
+    logo: imgLogoHumand,
     paragraphs: [
       "Diseño experiencias de producto en Humand, con foco en resolver problemas complejos de forma simple para los usuarios.",
       "Actualmente lidero el diseño de un buscador unificado, un proyecto que nace de la necesidad de resolver la fragmentación de búsquedas dentro de la plataforma. A partir de investigación con usuarios y benchmark de otras plataformas, di forma en conjunto al equipo a un enfoque de búsqueda centralizada que unifica resultados de distintos módulos (como Noticias, Feed y Grupos) en una sola experiencia, sin perder la consistencia entre secciones.",
@@ -65,6 +69,7 @@ export const EXPERIENCE = [
     role: "Product Designer",
     period: "Enero 2022 — Jul 2023",
     location: "Buenos Aires, Argentina",
+    logo: imgLogoNonconformist,
     paragraphs: [
       "En Nonconformist, formé parte del equipo que diseñó desde cero la Tarjeta de Débito Digital de Banco Supervielle, un producto que en ese momento no existía.",
       "Diseñamos e integramos funcionalidades clave como la posibilidad de exponer y ocultar los datos de la tarjeta, y visualizar los movimientos asociados. Para lograrlo, realizamos pruebas de usabilidad y entrevistas con usuarios, con el objetivo de entender sus necesidades reales y construir un producto centrado en quienes lo usan.",
@@ -83,6 +88,7 @@ export const EXPERIENCE = [
     role: "UX/UI Design",
     period: "Dic 2019 — Oct 2023",
     location: "Perú (Remoto)",
+    logo: imgLogoInstakash,
     paragraphs: [
       "En Instakash, una casa de cambio digital de Perú, participé en distintas etapas de evolución del producto: desde el diseño de las primeras versiones hasta sus sucesivas iteraciones.",
       "A medida que la plataforma escalaba, di forma a un Design System que permitió mantener consistencia visual y de interacción entre los distintos productos ofrecidos por la casa de cambio, coordinando el trabajo con los equipos de desarrollo y producto.",
@@ -594,7 +600,7 @@ const NAV_LINK_CLASS =
   "inline-flex items-center text-[14px] font-semibold tracking-[0.3px] text-[#8f86d4] rounded-sm transition-colors hover:text-[#f0eff8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c4c2ff]";
 
 const NAV_CONTACT_CLASS =
-  "items-center justify-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[#7673dc] text-white text-[14px] font-semibold leading-5 transition-colors hover:bg-[rgba(103,100,242,0.12)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]";
+  "items-center justify-center gap-1.5 px-[17px] py-[9px] rounded-[8px] border border-[rgba(103,100,242,0.3)] text-[#bbb5df] text-[14px] font-semibold leading-5 transition-colors hover:bg-[rgba(103,100,242,0.08)] hover:border-[rgba(103,100,242,0.5)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4c2ff]";
 
 function ContactIcon() {
   return (
@@ -681,7 +687,7 @@ function Navbar() {
     >
       <nav aria-label="Principal" className={`${SECTION_PAD} w-full`}>
         <div
-          className={`${SECTION_INNER} flex items-center justify-between py-4`}
+          className={`${SECTION_INNER} relative flex items-center justify-between py-4`}
         >
           <a
             href="#inicio"
@@ -692,22 +698,22 @@ function Navbar() {
             <LogoWordmark />
           </a>
 
-          <ul className="hidden lg:flex items-center gap-6">
-            {NAV_LINKS.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  onClick={(event) => scrollToTarget(event, link.href)}
-                  className={NAV_LINK_CLASS}
-                  style={{
-                    fontFamily: "'Open Sans', sans-serif",
-                  }}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <ul className="absolute left-1/2 hidden -translate-x-1/2 lg:flex items-center gap-4">
+              {NAV_LINKS.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    onClick={(event) => scrollToTarget(event, link.href)}
+                    className={NAV_LINK_CLASS}
+                    style={{
+                      fontFamily: "'Open Sans', sans-serif",
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
           <a
             href="#contact"
@@ -758,7 +764,7 @@ function Navbar() {
             <a
               href="#contact"
               onClick={(event) => scrollToTarget(event, "#contact")}
-              className={`inline-flex ${NAV_CONTACT_CLASS} mt-2 w-full`}
+              className={`inline-flex ${NAV_CONTACT_CLASS} mt-4 w-full`}
               style={{ fontFamily: "'Open Sans', sans-serif" }}
             >
               <ContactIcon />
@@ -853,7 +859,7 @@ function Hero() {
   return (
     <section
       id="about"
-      className={`relative min-h-screen flex items-center scroll-mt-18 ${SECTION_PAD} pt-24 pb-16 overflow-hidden w-full`}
+      className={`relative flex items-center scroll-mt-18 ${SECTION_PAD} pt-24 pb-8 overflow-hidden w-full`}
     >
       {/* Orbe izquierda */}
       <div
@@ -965,37 +971,44 @@ function ExperienceItem({
 }) {
   return (
     <FadeIn delay={index * 0.1}>
-      <div className="md:pl-10 relative">
+      <div>
         <button
           onClick={onToggle}
           className="w-full text-left group"
           aria-expanded={isOpen}
         >
-          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
-            <div className="flex items-start gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-4">
+              <div className="size-12 shrink-0 overflow-hidden rounded-[10px] border border-[rgba(103,100,242,0.14)] bg-[#09090f]">
+                <ImageWithFallback
+                  src={job.logo}
+                  alt=""
+                  className="size-full object-cover"
+                />
+              </div>
               <div className="flex flex-col">
                 <h3
-                  className="font-bold text-[18px] leading-[28px] text-[#f0eff8] group-hover:text-white transition-colors"
-                  style={{
-                    fontFamily: "'Open Sans', sans-serif",
-                  }}
-                >
-                  {job.role}
-                </h3>
-                <span
-                  className="font-semibold text-[14px] leading-[20px] text-[#8276ca]"
+                  className="font-bold text-[16px] leading-7 text-[#f0eff8] group-hover:text-white transition-colors"
                   style={{
                     fontFamily: "'Open Sans', sans-serif",
                   }}
                 >
                   {job.company}
+                </h3>
+                <span
+                  className="font-semibold text-[14px] leading-5 text-[#8276ca]"
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                  }}
+                >
+                  {job.role}
                 </span>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex flex-col items-start sm:items-end gap-[4px]">
                 <span
-                  className="text-[12px] text-[#7b78a8] flex items-center gap-[6px]"
+                  className="text-[14px] leading-[18px] text-[#7b78a8] flex items-center gap-[6px]"
                   style={{
                     fontFamily: "'Open Sans', sans-serif",
                   }}
@@ -1004,7 +1017,7 @@ function ExperienceItem({
                   {job.period}
                 </span>
                 <span
-                  className="text-[12px] text-[#7b78a8] flex items-center gap-[6px]"
+                  className="text-[14px] leading-[18px] text-[#7b78a8] flex items-center gap-[6px]"
                   style={{
                     fontFamily: "'Open Sans', sans-serif",
                   }}
@@ -1021,7 +1034,7 @@ function ExperienceItem({
                 }}
                 className="shrink-0 text-[#6764f2]"
               >
-                <ChevronDown className="size-4" />
+                <ChevronDown className="size-6" />
               </motion.div>
             </div>
           </div>
@@ -1039,7 +1052,7 @@ function ExperienceItem({
           }}
           style={{ overflow: "hidden" }}
         >
-          <div className="pt-4 pb-1 flex flex-col gap-[22.75px]">
+          <div className="flex flex-col gap-4 pt-4 pb-1">
             {job.paragraphs.map((p, pi) => (
               <p
                 key={pi}
@@ -1051,11 +1064,11 @@ function ExperienceItem({
                 {p}
               </p>
             ))}
-          </div>
-          <div className="flex flex-wrap gap-2 pb-2">
-            {job.tags.map((t) => (
-              <Tag key={t} label={t} />
-            ))}
+            <div className="flex flex-wrap gap-2">
+              {job.tags.map((t) => (
+                <Tag key={t} label={t} />
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
@@ -1064,12 +1077,12 @@ function ExperienceItem({
 }
 
 function ExperienceSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section
       id="experience"
-      className={`scroll-mt-18 ${SECTION_PAD} py-24 w-full`}
+      className={`scroll-mt-18 ${SECTION_PAD} pt-16 pb-24 w-full`}
     >
       <div className={SECTION_INNER}>
       <FadeIn>
