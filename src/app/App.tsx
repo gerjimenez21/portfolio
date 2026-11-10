@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   Outlet,
 } from "react-router";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, useInView } from "motion/react";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import {
@@ -1690,12 +1690,15 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  const [splashDone, setSplashDone] = useState(false);
+  const [splashVisible, setSplashVisible] = useState(true);
+  const endSplash = useCallback(() => setSplashVisible(false), []);
 
   return (
     <>
-      {!splashDone && <Splash onDone={() => setSplashDone(true)} />}
-      <RouterProvider router={router} />
+      {splashVisible && <Splash onDone={endSplash} />}
+      <div aria-hidden={splashVisible}>
+        <RouterProvider router={router} />
+      </div>
     </>
   );
 }
