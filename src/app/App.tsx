@@ -17,6 +17,8 @@ import {
   X,
 } from "lucide-react";
 import { Splash } from "@/app/components/Splash";
+import { SistemaPage } from "@/app/sistema/SistemaPage";
+import { Button, SectionLabel, Tag, Timeline } from "@/design-system/ui";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
 import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
 import expSvgPaths from "@/imports/ExperienceMargin/svg-j6yg914nz2";
@@ -42,17 +44,46 @@ const SOCIAL = {
 const SECTION_PAD = "px-6 md:px-16 lg:px-24";
 const SECTION_INNER = "w-full max-w-5xl mx-auto";
 
-export const EXPERIENCE = [
+type ExperienceChange = {
+  title: string;
+  body: string;
+  period?: string;
+};
+
+export const EXPERIENCE: {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  logo: string;
+  paragraphs: string[];
+  changes?: ExperienceChange[];
+  tags: string[];
+}[] = [
   {
     company: "Humand Technologies",
     role: "Product Designer",
     period: "Nov 2023 — Presente",
     location: "Remote",
     logo: imgLogoHumand,
-    paragraphs: [
-      "Diseño experiencias de producto en Humand, con foco en resolver problemas complejos de forma simple para los usuarios.",
-      "Actualmente lidero el diseño de un buscador unificado, un proyecto que nace de la necesidad de resolver la fragmentación de búsquedas dentro de la plataforma. A partir de investigación con usuarios y benchmark de otras plataformas, di forma en conjunto al equipo a un enfoque de búsqueda centralizada que unifica resultados de distintos módulos (como Noticias, Feed y Grupos) en una sola experiencia, sin perder la consistencia entre secciones.",
-      "Anteriormente, participé en la creación de Timetracker desde cero: un producto orientado a ayudar a las empresas a gestionar el tiempo de sus equipos. Trabajando junto a equipos de desarrollo e investigación de usuarios, dimos forma a una herramienta que permitió a nuestros clientes reemplazar soluciones externas y sumarse al todo-en-uno de HR que ofrece Humand.",
+    paragraphs: [],
+    changes: [
+      {
+        title: "Automations",
+        body: "En el equipo de Automations trabajo en la app para automatizar los procesos de las comunidades en Humand. Estamos definiendo e integrando sus módulos y automatizando procesos internos de recursos humanos.",
+      },
+      {
+        title: "Celebrations",
+        body: "La miniapp de Celebrations les da a las comunidades de Humand un lugar donde celebrar. El entorno reúne el widget, que ya existía, el feed y el calendario. También cambié cómo se configuran desde el admin.",
+      },
+      {
+        title: "Universal Search",
+        body: "Universal Search reúne en un solo lugar la búsqueda de Humand. Para llegar ahí hicimos pruebas de usabilidad y entrevistas para entender cómo buscan los colaboradores. La adopción esperada se alcanzó y se superó: cerca del 15% de los usuarios activos del mes hace al menos una búsqueda. En los principales clientes el uso llegó a su objetivo, y en el de mayor adopción lo pasó. Hoy se siguen sumando miniapps a los resultados, y seguimos iterando.",
+      },
+      {
+        title: "Time Tracking",
+        body: "Diseñé desde cero la miniapp de Time Tracking, que los colaboradores usan a diario para registrar su tiempo de trabajo, y que hoy es una de las más usadas de Humand. Ese trabajo me llevó a participar en el diseño del entorno del que depende: regiones y sedes, control horario, horarios laborales, Shift Management y Kiosk, una app aparte para marcar el ingreso y la salida en un dispositivo dedicado.",
+      },
     ],
     tags: [
       "Figma",
@@ -556,35 +587,6 @@ export function FadeIn({
   );
 }
 
-export function Tag({ label }: { label: string }) {
-  return (
-    <span
-      className="text-[14px] tracking-[0.275px] px-[11px] py-[5px] rounded-[4px] border border-[rgba(103,100,242,0.3)] text-[#BBB5DF] bg-[rgba(103,100,242,0.05)]"
-      style={{ fontFamily: "'Open Sans', sans-serif" }}
-    >
-      {label}
-    </span>
-  );
-}
-
-export function SectionLabel({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="flex items-center gap-3 mb-12">
-      <span
-        className="text-[#8276ca] text-[16px] tracking-[2.4px] whitespace-nowrap"
-        style={{ fontFamily: "'Open Sans', sans-serif" }}
-      >
-        {children}
-      </span>
-      <span className="flex-1 h-px bg-[rgba(103,100,242,0.2)]" />
-    </div>
-  );
-}
-
 /* ─── Shared layout ──────────────────────────────────────────────────── */
 
 const NAV_LINKS = [
@@ -926,7 +928,7 @@ function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-wrap gap-4"
           >
-            <a
+            <Button
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
@@ -934,11 +936,9 @@ function Hero() {
                   .querySelector("#contact")
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-[8px] bg-[#6764f2] text-white font-semibold text-[14px] transition-all hover:bg-[#5553d4] hover:shadow-[0_0_30px_rgba(103,100,242,0.4)]"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
             >
               Hablemos
-            </a>
+            </Button>
           </motion.div>
         </div>
 
@@ -1053,17 +1053,21 @@ function ExperienceItem({
           style={{ overflow: "hidden" }}
         >
           <div className="flex flex-col gap-4 pt-4 pb-1">
-            {job.paragraphs.map((p, pi) => (
-              <p
-                key={pi}
-                className="text-[#7b78a8] text-[14px] leading-[22.75px]"
-                style={{
-                  fontFamily: "'Open Sans', sans-serif",
-                }}
-              >
-                {p}
-              </p>
-            ))}
+            {job.changes?.length ? (
+              <Timeline items={job.changes} />
+            ) : (
+              job.paragraphs.map((p, pi) => (
+                <p
+                  key={pi}
+                  className="text-[#7b78a8] text-[14px] leading-[22.75px]"
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                  }}
+                >
+                  {p}
+                </p>
+              ))
+            )}
             <div className="flex flex-wrap gap-2">
               {job.tags.map((t) => (
                 <Tag key={t} label={t} />
@@ -1559,19 +1563,16 @@ function ContactSection() {
                     }}
                   />
                 </div>
-                <button
+                <Button
                   type="submit"
                   disabled={status === "sending"}
-                  className="self-start inline-flex items-center gap-2 px-6 py-3 rounded-[8px] bg-[#6764f2] text-white font-semibold text-[14px] transition-all hover:bg-[#5553d4] hover:shadow-[0_0_30px_rgba(103,100,242,0.4)] disabled:opacity-60 disabled:hover:bg-[#6764f2] disabled:hover:shadow-none"
-                  style={{
-                    fontFamily: "'Open Sans', sans-serif",
-                  }}
+                  className="self-start"
                 >
                   {status === "sending"
                     ? "Enviando..."
                     : "Enviar mensaje"}{" "}
                   <IconSend />
-                </button>
+                </Button>
                 {status === "error" && (
                   <p
                     className="text-sm text-[#f07178]"
@@ -1687,6 +1688,7 @@ const router = createBrowserRouter([
     Component: Root,
     children: [{ index: true, Component: HomePage }],
   },
+  { path: "/sistema", Component: SistemaPage },
 ]);
 
 export default function App() {
