@@ -647,7 +647,7 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "UZmZD",
+                      "id": "GnViJ",
                       "name": "Container",
                       "width": "fill_container",
                       "fill": "#0f0e1aff",
@@ -656,14 +656,12 @@
                       "strokeWidth": 1,
                       "strokeAlignment": "inner",
                       "layout": "vertical",
-                      "padding": [
-                        16,
-                        20
-                      ],
+                      "gap": "$space-6",
+                      "padding": "$space-6",
                       "children": [
                         {
                           "type": "frame",
-                          "id": "hNyNM",
+                          "id": "kXwM4",
                           "name": "Container",
                           "width": "fill_container",
                           "layout": "vertical",
@@ -671,7 +669,7 @@
                           "children": [
                             {
                               "type": "frame",
-                              "id": "iekAT",
+                              "id": "TFhDz",
                               "name": "Frame 13",
                               "width": "fill_container",
                               "layout": "vertical",
@@ -679,7 +677,7 @@
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "HGyv3",
+                                  "id": "lOpRZ",
                                   "name": "Button",
                                   "width": "fill_container",
                                   "gap": 16,
@@ -688,14 +686,14 @@
                                   "children": [
                                     {
                                       "type": "frame",
-                                      "id": "q8mJbt",
+                                      "id": "L7WEVp",
                                       "name": "Container",
                                       "gap": 16,
                                       "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
-                                          "id": "B9RCm",
+                                          "id": "byJOG",
                                           "name": "Container",
                                           "clip": true,
                                           "width": 48,
@@ -709,7 +707,7 @@
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "ms66t",
+                                              "id": "t2FHk",
                                               "name": "ImageWithFallback",
                                               "clip": true,
                                               "width": "fill_container",
@@ -726,20 +724,20 @@
                                         },
                                         {
                                           "type": "frame",
-                                          "id": "jpohz",
+                                          "id": "XT7Wa",
                                           "name": "Container",
                                           "layout": "vertical",
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "ahaGs",
+                                              "id": "w2nrx",
                                               "name": "Heading 3",
                                               "width": "fill_container",
                                               "layout": "vertical",
                                               "children": [
                                                 {
                                                   "type": "text",
-                                                  "id": "cGYpO",
+                                                  "id": "AGY2d",
                                                   "name": "Humand Technologies",
                                                   "fill": "#f0eff8ff",
                                                   "content": "Humand Technologies",
@@ -752,7 +750,7 @@
                                             },
                                             {
                                               "type": "frame",
-                                              "id": "VU4XH",
+                                              "id": "R8wEH",
                                               "name": "Text",
                                               "clip": true,
                                               "width": 199.046875,
@@ -761,7 +759,7 @@
                                               "children": [
                                                 {
                                                   "type": "text",
-                                                  "id": "Oa7pu",
+                                                  "id": "ysANZ",
                                                   "name": "Product Designer",
                                                   "fill": "#8276caff",
                                                   "content": "Product Designer",
@@ -778,14 +776,14 @@
                                     },
                                     {
                                       "type": "frame",
-                                      "id": "sFntN",
+                                      "id": "KUSV2",
                                       "name": "Container",
                                       "gap": 16,
                                       "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
-                                          "id": "Rilyp",
+                                          "id": "MIP0i",
                                           "name": "Container",
                                           "layout": "vertical",
                                           "gap": 4,
@@ -793,14 +791,14 @@
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "GuN7i",
+                                              "id": "CcpbB",
                                               "name": "Text",
                                               "gap": 6,
                                               "alignItems": "center",
                                               "children": [
                                                 {
                                                   "type": "frame",
-                                                  "id": "hV0RJ",
+                                                  "id": "bM1Bw",
                                                   "name": "CalendarIcon",
                                                   "clip": true,
                                                   "width": 14,
@@ -809,7 +807,7 @@
                                                   "children": [
                                                     {
                                                       "type": "path",
-                                                      "id": "ozIWQ",
+                                                      "id": "k7jEGW",
                                                       "x": 4.666666666666667,
                                                       "y": 1.1666666666666667,
                                                       "name": "Vector",
@@ -823,7 +821,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "hwAdE",
+                                                      "id": "OYCoy",
                                                       "x": 9.333333333333334,
                                                       "y": 1.1666666666666667,
                                                       "name": "Vector",
@@ -837,7 +835,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "nVV5o",
+                                                      "id": "f2lIJ",
                                                       "x": 1.75,
                                                       "y": 2.3333333333333335,
                                                       "name": "Vector",
@@ -851,7 +849,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "Q19Vd",
+                                                      "id": "MrDJI",
                                                       "x": 1.75,
                                                       "y": 5.833333333333334,
                                                       "name": "Vector",
@@ -867,7 +865,7 @@
                                                 },
                                                 {
                                                   "type": "text",
-                                                  "id": "V3rjXk",
+                                                  "id": "HwwtR",
                                                   "name": "Nov 2023 — Presente",
                                                   "fill": "#7b78a8ff",
                                                   "content": "Nov 2023 — Presente",
@@ -880,14 +878,14 @@
                                             },
                                             {
                                               "type": "frame",
-                                              "id": "B1Y5xV",
+                                              "id": "EtEzZ",
                                               "name": "Text",
                                               "gap": 6,
                                               "alignItems": "center",
                                               "children": [
                                                 {
                                                   "type": "frame",
-                                                  "id": "wv2Iw",
+                                                  "id": "AY1m3",
                                                   "name": "LocationIcon",
                                                   "clip": true,
                                                   "width": 14,
@@ -896,7 +894,7 @@
                                                   "children": [
                                                     {
                                                       "type": "path",
-                                                      "id": "Iq1OE",
+                                                      "id": "nhxwo",
                                                       "x": 2.3333333333333335,
                                                       "y": 1.1666666666666667,
                                                       "name": "Vector",
@@ -910,7 +908,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "Hf86B",
+                                                      "id": "dAECy",
                                                       "x": 5.25,
                                                       "y": 4.083333333333334,
                                                       "name": "Vector",
@@ -926,7 +924,7 @@
                                                 },
                                                 {
                                                   "type": "text",
-                                                  "id": "vCvFd",
+                                                  "id": "Rxjhz",
                                                   "name": "Remote",
                                                   "fill": "#7b78a8ff",
                                                   "content": "Remote",
@@ -941,13 +939,13 @@
                                         },
                                         {
                                           "type": "frame",
-                                          "id": "nXx36",
+                                          "id": "i0Zqho",
                                           "name": "Container",
                                           "layout": "vertical",
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "V99YM",
+                                              "id": "ZbftO",
                                               "name": "Icon",
                                               "clip": true,
                                               "width": 24,
@@ -956,7 +954,7 @@
                                               "children": [
                                                 {
                                                   "type": "path",
-                                                  "id": "dPWb7",
+                                                  "id": "a3o2w0",
                                                   "x": 6,
                                                   "y": 9,
                                                   "name": "Vector",
@@ -982,28 +980,22 @@
                         },
                         {
                           "type": "frame",
-                          "id": "Yeymg",
+                          "id": "l9fKL",
                           "name": "Experiencias",
                           "width": "fill_container",
                           "layout": "vertical",
                           "gap": "$radius-xl",
-                          "padding": [
-                            16,
-                            0,
-                            0,
-                            0
-                          ],
                           "children": [
                             {
                               "type": "frame",
-                              "id": "uOsrG",
+                              "id": "xxw7p",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "JQK5n",
+                                  "id": "LBHOt",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1017,18 +1009,18 @@
                                   "children": [
                                     {
                                       "type": "rectangle",
-                                      "id": "zqqqu",
+                                      "id": "CSvWa",
                                       "layoutPosition": "absolute",
                                       "x": 7.5,
                                       "y": 29,
                                       "name": "Line",
                                       "fill": "#6764F259",
                                       "width": 1,
-                                      "height": 97
+                                      "height": 120
                                     },
                                     {
                                       "type": "ellipse",
-                                      "id": "D7NKY",
+                                      "id": "ow4lY",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1038,7 +1030,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "SQq88",
+                                  "id": "LS4UC",
                                   "name": "Automations",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1049,7 +1041,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "BeEoX",
+                                      "id": "xDowt",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Automations",
@@ -1059,7 +1051,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "ARjFk",
+                                      "id": "n6Uq81",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -1076,14 +1068,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "i8hmi",
+                              "id": "FuL99",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "jXpAx",
+                                  "id": "o56aYP",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1097,18 +1089,18 @@
                                   "children": [
                                     {
                                       "type": "rectangle",
-                                      "id": "f07UdS",
+                                      "id": "lgHeg",
                                       "layoutPosition": "absolute",
                                       "x": 7.5,
                                       "y": 29,
                                       "name": "Line",
                                       "fill": "#6764F259",
                                       "width": 1,
-                                      "height": 97
+                                      "height": 120
                                     },
                                     {
                                       "type": "ellipse",
-                                      "id": "yHHt7",
+                                      "id": "A6bDE",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1118,7 +1110,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "hXk6d",
+                                  "id": "wQjQ5",
                                   "name": "Celebraciones",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1129,7 +1121,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "k3PhS9",
+                                      "id": "AqOec",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Celebrations",
@@ -1139,7 +1131,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "j7rGG",
+                                      "id": "evcip",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -1156,14 +1148,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "c1eTi",
+                              "id": "owrdN",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "ofJ5f",
+                                  "id": "x8H8iI",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1177,7 +1169,7 @@
                                   "children": [
                                     {
                                       "type": "rectangle",
-                                      "id": "E86OMr",
+                                      "id": "udml4",
                                       "layoutPosition": "absolute",
                                       "x": 7.5,
                                       "y": 29,
@@ -1188,7 +1180,7 @@
                                     },
                                     {
                                       "type": "ellipse",
-                                      "id": "YcNCR",
+                                      "id": "m75YW",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1198,7 +1190,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "KVrzj",
+                                  "id": "jDMPw",
                                   "name": "Universal Search",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1209,7 +1201,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "ybhri",
+                                      "id": "ciqsk",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Universal Search",
@@ -1219,7 +1211,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "y32iiV",
+                                      "id": "fWnsy",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -1236,14 +1228,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "mrYGC",
+                              "id": "yOqAo",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "Gpe6T",
+                                  "id": "i3otI",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1257,7 +1249,7 @@
                                   "children": [
                                     {
                                       "type": "ellipse",
-                                      "id": "e9AxYA",
+                                      "id": "VLbJY",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1267,7 +1259,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "cnCyE",
+                                  "id": "vy7kh",
                                   "name": "Timetracker",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1278,7 +1270,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "EPaVP",
+                                      "id": "SFBmH",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Time Tracking",
@@ -1288,7 +1280,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "pHhRF",
+                                      "id": "txZ1N",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -5383,6 +5375,165 @@
                                       ]
                                     }
                                   ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fWt44",
+                      "name": "Experiencias Nonconformist",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$radius-xl",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ua9ye",
+                          "name": "Tarjeta de débito",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "y8ausD",
+                              "name": "Rail",
+                              "width": 16,
+                              "layout": "vertical",
+                              "padding": [
+                                23,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "uZ4kI",
+                                  "layoutPosition": "absolute",
+                                  "x": 7.5,
+                                  "y": 29,
+                                  "name": "Line",
+                                  "fill": "#6764F259",
+                                  "width": 1,
+                                  "height": 120
+                                },
+                                {
+                                  "type": "ellipse",
+                                  "id": "dEdcd",
+                                  "name": "Dot",
+                                  "fill": "#6764F2",
+                                  "width": 8,
+                                  "height": 8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "oToxY",
+                              "name": "Tarjeta de débito",
+                              "width": "fill_container",
+                              "fill": "#151529ff",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "p0hPq",
+                                  "name": "Title",
+                                  "fill": "#F0EFF8",
+                                  "content": "Tarjeta de débito",
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "OfGHM",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "En Nonconformist fui parte del equipo de diseño de Banco Supervielle. Desde el inicio trabajé en su tarjeta de débito digital, una de las primeras tarjetas de débito digitales de un banco en el país. Permite pausar la tarjeta, avisar un viaje, ver los movimientos y mostrar los datos según Visa. Con el equipo de UX Research hicimos pruebas de usabilidad y entrevistas a clientes del banco.",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rf70O",
+                          "name": "PaaS",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "PmFMu",
+                              "name": "Rail",
+                              "width": 16,
+                              "layout": "vertical",
+                              "padding": [
+                                23,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "ellipse",
+                                  "id": "zGJ55",
+                                  "name": "Dot",
+                                  "fill": "#6764F2",
+                                  "width": 8,
+                                  "height": 8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "S0ccX",
+                              "name": "PaaS",
+                              "width": "fill_container",
+                              "fill": "#151529ff",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "EMxfZ",
+                                  "name": "Title",
+                                  "fill": "#F0EFF8",
+                                  "content": "PaaS",
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "k1t4bx",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Participé en la creación de PaaS, el sandbox B2B de Banco Supervielle, en etapa de POC. Tenía que servir a quien lo contrata y a quien lo usa, equipos de negocio y desarrolladores, y cumplir los estándares de un sandbox. Para eso investigamos a los dos perfiles.",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
