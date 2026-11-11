@@ -250,11 +250,15 @@ export function Timeline({
             key={`${item.title}-${index}`}
             className="grid grid-cols-[16px_1fr] gap-x-4"
           >
-            <div className="flex flex-col items-center pt-[23px]">
-              <span className="size-2 shrink-0 rounded-full bg-[#6764f2]" />
+            <div className="relative self-stretch">
               {!isLast && (
-                <span className="mt-1.5 w-px flex-1 bg-[rgba(103,100,242,0.35)]" />
+                <span
+                  aria-hidden
+                  className="absolute left-1/2 top-[29px] w-px -translate-x-1/2 bg-[rgba(103,100,242,0.35)]"
+                  style={{ height: "calc(100% - 4px)" }}
+                />
               )}
+              <span className="absolute left-1/2 top-[23px] size-2 -translate-x-1/2 rounded-full bg-[#6764f2]" />
             </div>
             <div className={isLast ? undefined : "pb-4"}>
               <div className="flex flex-col gap-2 rounded-[8px] bg-[#151529] p-4">
