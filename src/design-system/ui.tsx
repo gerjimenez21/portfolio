@@ -250,35 +250,37 @@ export function Timeline({
             key={`${item.title}-${index}`}
             className="grid grid-cols-[16px_1fr] gap-x-4"
           >
-            <div className="flex flex-col items-center">
-              <span className="mt-1.5 size-2 shrink-0 rounded-full bg-[#6764f2]" />
+            <div className="flex flex-col items-center pt-[23px]">
+              <span className="size-2 shrink-0 rounded-full bg-[#6764f2]" />
               {!isLast && (
-                <span className="mt-1 w-px flex-1 bg-[rgba(103,100,242,0.35)]" />
+                <span className="mt-1.5 w-px flex-1 bg-[rgba(103,100,242,0.35)]" />
               )}
             </div>
-            <div className={isLast ? "pb-1" : "pb-6"}>
-              <div className="flex items-baseline justify-between gap-4">
-                <h4
-                  className="font-bold text-[16px] leading-6 text-[#f0eff8]"
-                  style={{ fontFamily: fontSans }}
-                >
-                  {item.title}
-                </h4>
-                {item.period ? (
-                  <span
-                    className="shrink-0 text-[14px] leading-[18px] text-[#7b78a8]"
+            <div className={isLast ? undefined : "pb-4"}>
+              <div className="flex flex-col gap-2 rounded-[8px] bg-[#151529] p-4">
+                <div className="flex items-baseline justify-between gap-4">
+                  <h4
+                    className="font-bold text-[16px] leading-6 text-[#f0eff8]"
                     style={{ fontFamily: fontSans }}
                   >
-                    {item.period}
-                  </span>
-                ) : null}
+                    {item.title}
+                  </h4>
+                  {item.period ? (
+                    <span
+                      className="shrink-0 text-[14px] leading-[18px] text-[#7b78a8]"
+                      style={{ fontFamily: fontSans }}
+                    >
+                      {item.period}
+                    </span>
+                  ) : null}
+                </div>
+                <p
+                  className="text-[#7b78a8] text-[14px] leading-[22.75px]"
+                  style={{ fontFamily: fontSans }}
+                >
+                  {item.body}
+                </p>
               </div>
-              <p
-                className="mt-2 text-[#7b78a8] text-[14px] leading-[22.75px]"
-                style={{ fontFamily: fontSans }}
-              >
-                {item.body}
-              </p>
             </div>
           </li>
         );
