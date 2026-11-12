@@ -236,10 +236,76 @@ export function SocialLink({
   );
 }
 
+export type TimelineItem = {
+  title: string;
+  body: string;
+  period?: string;
+};
+
+export function TimelineGroups({
+  groups,
+}: {
+  groups: TimelineItem[][];
+}) {
+  return (
+    <div className="flex flex-col gap-4">
+      {groups.map((group, groupIndex) => (
+        <ol
+          key={groupIndex}
+          className="rounded-[8px] bg-[#151529] px-4 py-4"
+        >
+          {group.map((item, index) => {
+            const isLast = index === group.length - 1;
+            return (
+              <li
+                key={`${item.title}-${index}`}
+                className="grid grid-cols-[16px_1fr] gap-x-4"
+              >
+                <div className="relative self-stretch">
+                  {!isLast && (
+                    <span
+                      aria-hidden
+                      className="absolute left-1/2 top-4 w-px -translate-x-1/2 bg-[rgba(103,100,242,0.35)]"
+                      style={{ height: "calc(100% - 6px)" }}
+                    />
+                  )}
+                  <span className="absolute left-1/2 top-2 size-2 -translate-x-1/2 rounded-full bg-[#6764f2]" />
+                </div>
+                <div className={isLast ? undefined : "pb-6"}>
+                  <h4
+                    className="font-bold text-[16px] leading-6 text-[#f0eff8]"
+                    style={{ fontFamily: fontSans }}
+                  >
+                    {item.title}
+                  </h4>
+                  {item.period ? (
+                    <p
+                      className="mt-1 text-[14px] italic leading-[18px] text-[#7b78a8]"
+                      style={{ fontFamily: fontSans }}
+                    >
+                      {item.period}
+                    </p>
+                  ) : null}
+                  <p
+                    className="mt-2 text-[#7b78a8] text-[14px] leading-[22.75px]"
+                    style={{ fontFamily: fontSans }}
+                  >
+                    {item.body}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      ))}
+    </div>
+  );
+}
+
 export function Timeline({
   items,
 }: {
-  items: { title: string; body: string; period?: string }[];
+  items: TimelineItem[];
 }) {
   return (
     <ol className="flex flex-col">

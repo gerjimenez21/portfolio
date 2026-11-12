@@ -18,7 +18,13 @@ import {
 } from "lucide-react";
 import { Splash } from "@/app/components/Splash";
 import { SistemaPage } from "@/app/sistema/SistemaPage";
-import { Button, SectionLabel, Tag, Timeline } from "@/design-system/ui";
+import {
+  Button,
+  SectionLabel,
+  Tag,
+  Timeline,
+  TimelineGroups,
+} from "@/design-system/ui";
 import svgPaths from "@/imports/PortfolioPageDesign/svg-zfmadp87xp";
 import newSvgPaths from "@/imports/PortfolioPageDesign-1/svg-quai8z445o";
 import expSvgPaths from "@/imports/ExperienceMargin/svg-j6yg914nz2";
@@ -57,6 +63,8 @@ export const EXPERIENCE: {
   location: string;
   logo: string;
   paragraphs: string[];
+  summary?: string;
+  groups?: ExperienceChange[][];
   changes?: ExperienceChange[];
   tags: string[];
 }[] = [
@@ -67,23 +75,33 @@ export const EXPERIENCE: {
     location: "Remote",
     logo: imgLogoHumand,
     paragraphs: [],
-    changes: [
-      {
-        title: "Automations",
-        body: "En el equipo de Automations trabajo en la app para automatizar los procesos de las comunidades en Humand. Estamos definiendo e integrando sus módulos y automatizando procesos internos de recursos humanos.",
-      },
-      {
-        title: "Celebrations",
-        body: "La miniapp de Celebrations les da a las comunidades de Humand un lugar donde celebrar. El entorno reúne el widget, que ya existía, el feed y el calendario. También cambié cómo se configuran desde el admin.",
-      },
-      {
-        title: "Universal Search",
-        body: "Universal Search reúne en un solo lugar la búsqueda de Humand. Para llegar ahí hicimos pruebas de usabilidad y entrevistas para entender cómo buscan los colaboradores. La adopción esperada se alcanzó y se superó: cerca del 15% de los usuarios activos del mes hace al menos una búsqueda. En los principales clientes el uso llegó a su objetivo, y en el de mayor adopción lo pasó. Hoy se siguen sumando miniapps a los resultados, y seguimos iterando.",
-      },
-      {
-        title: "Time Tracking",
-        body: "Diseñé desde cero la miniapp de Time Tracking, que los colaboradores usan a diario para registrar su tiempo de trabajo, y que hoy es una de las más usadas de Humand. Ese trabajo me llevó a participar en el diseño del entorno del que depende: regiones y sedes, control horario, horarios laborales, Shift Management y Kiosk, una app aparte para marcar el ingreso y la salida en un dispositivo dedicado.",
-      },
+    summary:
+      "Diseño para las comunidades y los colaboradores que usan Humand, un SaaS de recursos humanos todo en uno. Diseñé desde cero Time Tracking, una miniapp de uso diario que sigue entre las más usadas. En la actualidad, soy responsable de la exploración y el diseño de Celebrations, Universal Search y Automations. También participo en el mantenimiento y la iteración del sistema de diseño, aportando nuevos componentes o mejoras de los existentes. Uso IA en el proceso de diseño para trabajar en varios proyectos y con varios equipos a la vez.",
+    groups: [
+      [
+        {
+          title: "Automations",
+          period: "Septiembre 2026 - Actualidad",
+          body: "Fui incorporado al equipo que construye Automations, la app para automatizar procesos internos de recursos humanos en las empresas, como enviar un mensaje cuando un colaborador solicita vacaciones o cuando Time Tracking genera una alerta.",
+        },
+        {
+          title: "Celebrations",
+          period: "Agosto 2026 - Actualidad",
+          body: "Celebrations les da a los colaboradores un lugar para felicitarse en días especiales, algo que hasta ahora pasaba por grupos o por mensaje privado. Con el equipo sumamos el feed y el calendario, y mejoramos la configuración del admin, que antes solo mostraba los cumpleaños y aniversarios más cercanos, para adaptarla a este nuevo módulo.",
+        },
+        {
+          title: "Universal Search",
+          period: "Abril 2026 - Actualidad",
+          body: "Universal Search reúne en un solo lugar la búsqueda de Humand. Para llegar ahí hicimos pruebas de usabilidad y entrevistas, para entender cómo buscan los colaboradores dentro de la app. Uno de los objetivos era que el 15% de los usuarios activos del mes hiciera al menos una búsqueda, métrica que se alcanzó y se superó. En los principales clientes el uso llegó a su objetivo, entre el 35% y el 40% de los usuarios activos del mes. Hoy Filipinas y Brasil tienen las comunidades donde más se usa el buscador. Seguimos sumando miniapps a los resultados de búsqueda, y seguimos iterando.",
+        },
+      ],
+      [
+        {
+          title: "Time Tracking",
+          period: "Noviembre 2023 - Abril 2026",
+          body: "Diseñé desde cero la miniapp de Time Tracking. Los colaboradores la usan a diario para registrar su tiempo de trabajo, y hoy es una de las más usadas de Humand. Durante este tiempo, participé con el equipo iterando la configuración de regiones y sedes, así como diseñando los módulos de Control horario, Work Schedule y Shift Management. También diseñé Kiosk, una app Tablet First dedicada al marcaje del ingreso y de la salida de los colaboradores.",
+        },
+      ],
     ],
     tags: [
       "Figma",
@@ -1053,7 +1071,29 @@ function ExperienceItem({
           style={{ overflow: "hidden" }}
         >
           <div className="flex flex-col gap-4 pt-4 pb-1">
-            {job.changes?.length ? (
+            {job.summary ? (
+              <div className="flex flex-col gap-2">
+                <h4
+                  className="font-bold text-[16px] leading-6 text-[#f0eff8]"
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                  }}
+                >
+                  Rol
+                </h4>
+                <p
+                  className="text-[#7b78a8] text-[14px] leading-[22.75px]"
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                  }}
+                >
+                  {job.summary}
+                </p>
+              </div>
+            ) : null}
+            {job.groups?.length ? (
+              <TimelineGroups groups={job.groups} />
+            ) : job.changes?.length ? (
               <Timeline items={job.changes} />
             ) : (
               job.paragraphs.map((p, pi) => (
