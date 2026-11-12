@@ -82,7 +82,7 @@ export const EXPERIENCE: {
         {
           title: "Automations",
           period: "Septiembre 2026 - Actualidad",
-          body: "Fui incorporado al equipo que construye Automations, la app para automatizar procesos internos de recursos humanos en las empresas, como enviar un mensaje cuando un colaborador solicita vacaciones o cuando Time Tracking genera una alerta.",
+          body: "Fui incorporado como diseñador al equipo que construye Automations, la app para automatizar procesos internos de recursos humanos en las empresas, como enviar un mensaje cuando un colaborador solicita vacaciones o cuando Time Tracking genera una alerta.",
         },
         {
           title: "Celebrations",
