@@ -647,7 +647,7 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "GnViJ",
+                      "id": "jlU1f",
                       "name": "Container",
                       "width": "fill_container",
                       "fill": "#0f0e1aff",
@@ -661,7 +661,7 @@
                       "children": [
                         {
                           "type": "frame",
-                          "id": "kXwM4",
+                          "id": "IMcFT",
                           "name": "Container",
                           "width": "fill_container",
                           "layout": "vertical",
@@ -669,7 +669,7 @@
                           "children": [
                             {
                               "type": "frame",
-                              "id": "TFhDz",
+                              "id": "N0hjh",
                               "name": "Frame 13",
                               "width": "fill_container",
                               "layout": "vertical",
@@ -677,7 +677,7 @@
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "lOpRZ",
+                                  "id": "j6JX3",
                                   "name": "Button",
                                   "width": "fill_container",
                                   "gap": 16,
@@ -686,14 +686,14 @@
                                   "children": [
                                     {
                                       "type": "frame",
-                                      "id": "L7WEVp",
+                                      "id": "d4lCt",
                                       "name": "Container",
                                       "gap": 16,
                                       "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
-                                          "id": "byJOG",
+                                          "id": "POrZF",
                                           "name": "Container",
                                           "clip": true,
                                           "width": 48,
@@ -707,7 +707,7 @@
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "t2FHk",
+                                              "id": "k4nEhZ",
                                               "name": "ImageWithFallback",
                                               "clip": true,
                                               "width": "fill_container",
@@ -724,20 +724,20 @@
                                         },
                                         {
                                           "type": "frame",
-                                          "id": "XT7Wa",
+                                          "id": "hgzSE",
                                           "name": "Container",
                                           "layout": "vertical",
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "w2nrx",
+                                              "id": "W2vBwi",
                                               "name": "Heading 3",
                                               "width": "fill_container",
                                               "layout": "vertical",
                                               "children": [
                                                 {
                                                   "type": "text",
-                                                  "id": "AGY2d",
+                                                  "id": "esXuu",
                                                   "name": "Humand Technologies",
                                                   "fill": "#f0eff8ff",
                                                   "content": "Humand Technologies",
@@ -750,7 +750,7 @@
                                             },
                                             {
                                               "type": "frame",
-                                              "id": "R8wEH",
+                                              "id": "Xmh2p",
                                               "name": "Text",
                                               "clip": true,
                                               "width": 199.046875,
@@ -759,7 +759,7 @@
                                               "children": [
                                                 {
                                                   "type": "text",
-                                                  "id": "ysANZ",
+                                                  "id": "PMsOJ",
                                                   "name": "Product Designer",
                                                   "fill": "#8276caff",
                                                   "content": "Product Designer",
@@ -776,14 +776,14 @@
                                     },
                                     {
                                       "type": "frame",
-                                      "id": "KUSV2",
+                                      "id": "GGqo3",
                                       "name": "Container",
                                       "gap": 16,
                                       "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
-                                          "id": "MIP0i",
+                                          "id": "GCUk0",
                                           "name": "Container",
                                           "layout": "vertical",
                                           "gap": 4,
@@ -791,14 +791,14 @@
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "CcpbB",
+                                              "id": "eCGtd",
                                               "name": "Text",
                                               "gap": 6,
                                               "alignItems": "center",
                                               "children": [
                                                 {
                                                   "type": "frame",
-                                                  "id": "bM1Bw",
+                                                  "id": "LdnpO",
                                                   "name": "CalendarIcon",
                                                   "clip": true,
                                                   "width": 14,
@@ -807,7 +807,7 @@
                                                   "children": [
                                                     {
                                                       "type": "path",
-                                                      "id": "k7jEGW",
+                                                      "id": "ebXmE",
                                                       "x": 4.666666666666667,
                                                       "y": 1.1666666666666667,
                                                       "name": "Vector",
@@ -821,7 +821,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "OYCoy",
+                                                      "id": "UcsIx",
                                                       "x": 9.333333333333334,
                                                       "y": 1.1666666666666667,
                                                       "name": "Vector",
@@ -835,7 +835,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "f2lIJ",
+                                                      "id": "YNPDO",
                                                       "x": 1.75,
                                                       "y": 2.3333333333333335,
                                                       "name": "Vector",
@@ -849,7 +849,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "MrDJI",
+                                                      "id": "fOph8",
                                                       "x": 1.75,
                                                       "y": 5.833333333333334,
                                                       "name": "Vector",
@@ -865,7 +865,7 @@
                                                 },
                                                 {
                                                   "type": "text",
-                                                  "id": "HwwtR",
+                                                  "id": "dd0mi",
                                                   "name": "Nov 2023 — Presente",
                                                   "fill": "#7b78a8ff",
                                                   "content": "Nov 2023 — Presente",
@@ -878,14 +878,14 @@
                                             },
                                             {
                                               "type": "frame",
-                                              "id": "EtEzZ",
+                                              "id": "poTxj",
                                               "name": "Text",
                                               "gap": 6,
                                               "alignItems": "center",
                                               "children": [
                                                 {
                                                   "type": "frame",
-                                                  "id": "AY1m3",
+                                                  "id": "XqfnA",
                                                   "name": "LocationIcon",
                                                   "clip": true,
                                                   "width": 14,
@@ -894,7 +894,7 @@
                                                   "children": [
                                                     {
                                                       "type": "path",
-                                                      "id": "nhxwo",
+                                                      "id": "HCGSx",
                                                       "x": 2.3333333333333335,
                                                       "y": 1.1666666666666667,
                                                       "name": "Vector",
@@ -908,7 +908,7 @@
                                                     },
                                                     {
                                                       "type": "path",
-                                                      "id": "dAECy",
+                                                      "id": "S3FCY",
                                                       "x": 5.25,
                                                       "y": 4.083333333333334,
                                                       "name": "Vector",
@@ -924,7 +924,7 @@
                                                 },
                                                 {
                                                   "type": "text",
-                                                  "id": "Rxjhz",
+                                                  "id": "oRPJL",
                                                   "name": "Remote",
                                                   "fill": "#7b78a8ff",
                                                   "content": "Remote",
@@ -939,13 +939,13 @@
                                         },
                                         {
                                           "type": "frame",
-                                          "id": "i0Zqho",
+                                          "id": "WXUWr",
                                           "name": "Container",
                                           "layout": "vertical",
                                           "children": [
                                             {
                                               "type": "frame",
-                                              "id": "ZbftO",
+                                              "id": "kexXY",
                                               "name": "Icon",
                                               "clip": true,
                                               "width": 24,
@@ -954,7 +954,7 @@
                                               "children": [
                                                 {
                                                   "type": "path",
-                                                  "id": "a3o2w0",
+                                                  "id": "u0cLG",
                                                   "x": 6,
                                                   "y": 9,
                                                   "name": "Vector",
@@ -980,7 +980,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "l9fKL",
+                          "id": "VmYbN",
                           "name": "Experiencias",
                           "width": "fill_container",
                           "layout": "vertical",
@@ -988,14 +988,58 @@
                           "children": [
                             {
                               "type": "frame",
-                              "id": "xxw7p",
+                              "id": "Oqy4d",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "LBHOt",
+                                  "id": "dx74l",
+                                  "name": "Automations",
+                                  "width": "fill_container",
+                                  "cornerRadius": "$radius-sm",
+                                  "layout": "vertical",
+                                  "gap": 8,
+                                  "padding": "$radius-xl",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "uIwqW",
+                                      "name": "Title",
+                                      "fill": "#F0EFF8",
+                                      "content": "Rol",
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 16,
+                                      "fontWeight": "700"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "DCJIv",
+                                      "name": "Body",
+                                      "fill": "#7B78A8",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Diseño para las comunidades y los colaboradores que usan Humand, un SaaS de recursos humanos todo en uno. Soy responsable de la exploración y del diseño de miniapps de la plataforma, entre ellas el muro de celebraciones, Universal Search y Automations, que automatiza procesos de las empresas. Doy soporte a múltiples equipos, y también al mantenimiento y a la iteración del sistema de diseño.",
+                                      "lineHeight": 1.625,
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "yXFOx",
+                              "name": "Timeline item",
+                              "width": "fill_container",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "vaHQq",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1009,7 +1053,7 @@
                                   "children": [
                                     {
                                       "type": "rectangle",
-                                      "id": "CSvWa",
+                                      "id": "sHFQf",
                                       "layoutPosition": "absolute",
                                       "x": 7.5,
                                       "y": 29,
@@ -1020,7 +1064,7 @@
                                     },
                                     {
                                       "type": "ellipse",
-                                      "id": "ow4lY",
+                                      "id": "YQAIM",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1030,7 +1074,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "LS4UC",
+                                  "id": "mZBlJ",
                                   "name": "Automations",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1041,7 +1085,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "xDowt",
+                                      "id": "m1raZP",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Automations",
@@ -1051,7 +1095,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "n6Uq81",
+                                      "id": "GV6ap",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -1068,14 +1112,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "FuL99",
+                              "id": "Ax6wn",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "o56aYP",
+                                  "id": "NsFBE",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1089,7 +1133,7 @@
                                   "children": [
                                     {
                                       "type": "rectangle",
-                                      "id": "lgHeg",
+                                      "id": "WDHNh",
                                       "layoutPosition": "absolute",
                                       "x": 7.5,
                                       "y": 29,
@@ -1100,7 +1144,7 @@
                                     },
                                     {
                                       "type": "ellipse",
-                                      "id": "A6bDE",
+                                      "id": "JQalk",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1110,7 +1154,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "wQjQ5",
+                                  "id": "RSY14",
                                   "name": "Celebraciones",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1121,7 +1165,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "AqOec",
+                                      "id": "saF05",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Celebrations",
@@ -1131,7 +1175,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "evcip",
+                                      "id": "iCp7P",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -1148,14 +1192,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "owrdN",
+                              "id": "xPg1K",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "x8H8iI",
+                                  "id": "Boahb",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1169,7 +1213,7 @@
                                   "children": [
                                     {
                                       "type": "rectangle",
-                                      "id": "udml4",
+                                      "id": "nDxWp",
                                       "layoutPosition": "absolute",
                                       "x": 7.5,
                                       "y": 29,
@@ -1180,7 +1224,7 @@
                                     },
                                     {
                                       "type": "ellipse",
-                                      "id": "m75YW",
+                                      "id": "s89DsV",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1190,7 +1234,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "jDMPw",
+                                  "id": "yowxf",
                                   "name": "Universal Search",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1201,7 +1245,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "ciqsk",
+                                      "id": "OsvT9",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Universal Search",
@@ -1211,7 +1255,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "fWnsy",
+                                      "id": "r5NiD",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -1228,14 +1272,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "yOqAo",
+                              "id": "O2CT3",
                               "name": "Timeline item",
                               "width": "fill_container",
                               "gap": 16,
                               "children": [
                                 {
                                   "type": "frame",
-                                  "id": "i3otI",
+                                  "id": "b9aQ1",
                                   "name": "Rail",
                                   "width": 16,
                                   "layout": "vertical",
@@ -1249,7 +1293,7 @@
                                   "children": [
                                     {
                                       "type": "ellipse",
-                                      "id": "VLbJY",
+                                      "id": "MBBZs",
                                       "name": "Dot",
                                       "fill": "#6764F2",
                                       "width": 8,
@@ -1259,7 +1303,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "vy7kh",
+                                  "id": "W3ynu",
                                   "name": "Timetracker",
                                   "width": "fill_container",
                                   "fill": "#151529ff",
@@ -1270,7 +1314,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "SFBmH",
+                                      "id": "mRAqC",
                                       "name": "Title",
                                       "fill": "#F0EFF8",
                                       "content": "Time Tracking",
@@ -1280,7 +1324,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "txZ1N",
+                                      "id": "Kly4b",
                                       "name": "Body",
                                       "fill": "#7B78A8",
                                       "textGrowth": "fixed-width",
@@ -4753,7 +4797,51 @@
                           "children": [
                             {
                               "type": "frame",
-                              "id": "yTpkC",
+                              "id": "Qpq1J",
+                              "name": "Automations",
+                              "width": "fill_container",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "C6mpk",
+                                  "name": "Title",
+                                  "fill": "#F0EFF8",
+                                  "content": "Rol",
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "i50Md",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Diseño para las comunidades y los colaboradores que usan Humand, un SaaS de recursos humanos todo en uno. Soy responsable de la exploración y del diseño de miniapps de la plataforma, entre ellas el muro de celebraciones, Universal Search y Automations, que automatiza procesos de las empresas. Doy soporte a múltiples equipos, y también al mantenimiento y a la iteración del sistema de diseño",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mzNek",
+                          "name": "Timeline item",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "PGRs6",
                               "name": "Rail",
                               "width": 16,
                               "layout": "vertical",
@@ -4767,7 +4855,7 @@
                               "children": [
                                 {
                                   "type": "rectangle",
-                                  "id": "XkZds",
+                                  "id": "K55jq",
                                   "layoutPosition": "absolute",
                                   "x": 7.5,
                                   "y": 29,
@@ -4778,7 +4866,7 @@
                                 },
                                 {
                                   "type": "ellipse",
-                                  "id": "u7URJ",
+                                  "id": "woKuJ",
                                   "name": "Dot",
                                   "fill": "#6764F2",
                                   "width": 8,
@@ -4788,7 +4876,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "Qpq1J",
+                              "id": "p8x2nX",
                               "name": "Automations",
                               "width": "fill_container",
                               "fill": "#151529ff",
@@ -4799,7 +4887,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "C6mpk",
+                                  "id": "OL1eA",
                                   "name": "Title",
                                   "fill": "#F0EFF8",
                                   "content": "Automations",
@@ -4809,7 +4897,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "i50Md",
+                                  "id": "xGZCV",
                                   "name": "Body",
                                   "fill": "#7B78A8",
                                   "textGrowth": "fixed-width",
@@ -5847,6 +5935,1610 @@
                                         {
                                           "type": "path",
                                           "id": "upmWA",
+                                          "x": 6,
+                                          "y": 9,
+                                          "name": "Vector",
+                                          "geometry": "M0 0l6 6 6-6",
+                                          "width": 12,
+                                          "height": 6,
+                                          "stroke": "#6764f2ff",
+                                          "strokeWidth": 2,
+                                          "strokeLinejoin": "round",
+                                          "strokeLinecap": "round"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tkpvG",
+      "x": 5499,
+      "y": -414,
+      "name": "Experiencia abierta",
+      "clip": true,
+      "width": 1512,
+      "fill": "#09090F",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "lqKbx",
+          "name": "ExperienceSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            64,
+            0,
+            96,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "J5WZz",
+              "name": "Container",
+              "width": 1220,
+              "height": 19,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uiruY",
+                  "name": "Text",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y5UgQ",
+                      "name": "Experiencia",
+                      "fill": "#8276caff",
+                      "content": "Experiencia",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2.4000000953674316
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ewIwK",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#6764f233",
+                  "layout": "none"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zKFKc",
+              "name": "Container",
+              "width": 1220,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                48,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Cwrzc",
+                  "name": "Container",
+                  "width": "fill_container",
+                  "fill": "#0f0e1aff",
+                  "cornerRadius": 12,
+                  "stroke": "#6764f21a",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": "$space-6",
+                  "padding": "$space-6",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JqLTb",
+                      "name": "Container",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "E655F3",
+                          "name": "Frame 13",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "v6m9qN",
+                              "name": "Button",
+                              "width": "fill_container",
+                              "gap": 16,
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "B56MA",
+                                  "name": "Container",
+                                  "gap": 16,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "nPNEc",
+                                      "name": "Container",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": "#09090fff",
+                                      "cornerRadius": 10,
+                                      "stroke": "#6764f224",
+                                      "strokeWidth": 1,
+                                      "strokeAlignment": "inner",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "U3AMb",
+                                          "name": "ImageWithFallback",
+                                          "clip": true,
+                                          "width": "fill_container",
+                                          "height": 46,
+                                          "fill": {
+                                            "type": "image",
+                                            "enabled": true,
+                                            "url": "images/humand.png",
+                                            "mode": "cover"
+                                          },
+                                          "layout": "none"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "jkmiV",
+                                      "name": "Container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "IaR1j",
+                                          "name": "Heading 3",
+                                          "width": "fill_container",
+                                          "layout": "vertical",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "t2Om14",
+                                              "name": "Humand Technologies",
+                                              "fill": "#f0eff8ff",
+                                              "content": "Humand Technologies",
+                                              "lineHeight": 1.75,
+                                              "fontFamily": "Open Sans",
+                                              "fontSize": 16,
+                                              "fontWeight": "700"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "nqiFw",
+                                          "name": "Text",
+                                          "clip": true,
+                                          "width": 199.046875,
+                                          "height": 20,
+                                          "layout": "vertical",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "id": "sudXJ",
+                                              "name": "Product Designer",
+                                              "fill": "#8276caff",
+                                              "content": "Product Designer",
+                                              "lineHeight": 1.4285714285714286,
+                                              "fontFamily": "Open Sans",
+                                              "fontSize": 14,
+                                              "fontWeight": "600"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "I1JTyV",
+                                  "name": "Container",
+                                  "gap": 16,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "YoarZ",
+                                      "name": "Container",
+                                      "layout": "vertical",
+                                      "gap": 4,
+                                      "alignItems": "end",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "Ba6oB",
+                                          "name": "Text",
+                                          "gap": 6,
+                                          "alignItems": "center",
+                                          "children": [
+                                            {
+                                              "type": "frame",
+                                              "id": "rwR4s",
+                                              "name": "CalendarIcon",
+                                              "clip": true,
+                                              "width": 14,
+                                              "height": 14,
+                                              "layout": "none",
+                                              "children": [
+                                                {
+                                                  "type": "path",
+                                                  "id": "ijFo1",
+                                                  "x": 4.666666666666667,
+                                                  "y": 1.1666666666666667,
+                                                  "name": "Vector",
+                                                  "geometry": "M0 0l0 2",
+                                                  "width": 0,
+                                                  "height": 2.3333333333333335,
+                                                  "stroke": "#7b78a8ff",
+                                                  "strokeWidth": 1.1666666666666667,
+                                                  "strokeLinejoin": "round",
+                                                  "strokeLinecap": "round"
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "id": "FT8Jp",
+                                                  "x": 9.333333333333334,
+                                                  "y": 1.1666666666666667,
+                                                  "name": "Vector",
+                                                  "geometry": "M0 0l0 2",
+                                                  "width": 0,
+                                                  "height": 2.3333333333333335,
+                                                  "stroke": "#7b78a8ff",
+                                                  "strokeWidth": 1.1666666666666667,
+                                                  "strokeLinejoin": "round",
+                                                  "strokeLinecap": "round"
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "id": "I0kU2A",
+                                                  "x": 1.75,
+                                                  "y": 2.3333333333333335,
+                                                  "name": "Vector",
+                                                  "geometry": "M8 0l-7 0c-0.55228 0-1 0.44772-1 1l0 7c0 0.5523 0.44772 1 1 1l7 0c0.5523 0 1-0.4477 1-1l0-7c0-0.55228-0.4477-1-1-1z",
+                                                  "width": 10.5,
+                                                  "height": 10.5,
+                                                  "stroke": "#7b78a8ff",
+                                                  "strokeWidth": 1.1666666666666667,
+                                                  "strokeLinejoin": "round",
+                                                  "strokeLinecap": "round"
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "id": "izBUU",
+                                                  "x": 1.75,
+                                                  "y": 5.833333333333334,
+                                                  "name": "Vector",
+                                                  "geometry": "M0 0l9 0",
+                                                  "width": 10.5,
+                                                  "height": 0,
+                                                  "stroke": "#7b78a8ff",
+                                                  "strokeWidth": 1.1666666666666667,
+                                                  "strokeLinejoin": "round",
+                                                  "strokeLinecap": "round"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "wHNlS",
+                                              "name": "Nov 2023 — Presente",
+                                              "fill": "#7b78a8ff",
+                                              "content": "Nov 2023 — Presente",
+                                              "lineHeight": 1.2857142857142858,
+                                              "fontFamily": "Open Sans",
+                                              "fontSize": 14,
+                                              "fontWeight": "600"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "frame",
+                                          "id": "S3Ih0",
+                                          "name": "Text",
+                                          "gap": 6,
+                                          "alignItems": "center",
+                                          "children": [
+                                            {
+                                              "type": "frame",
+                                              "id": "USTLx",
+                                              "name": "LocationIcon",
+                                              "clip": true,
+                                              "width": 14,
+                                              "height": 14,
+                                              "layout": "none",
+                                              "children": [
+                                                {
+                                                  "type": "path",
+                                                  "id": "IRDby",
+                                                  "x": 2.3333333333333335,
+                                                  "y": 1.1666666666666667,
+                                                  "name": "Vector",
+                                                  "geometry": "M4.3005 9.8995c0.93-0.803 3.6995-3.403 3.6995-5.8995 0-1.06087-0.42143-2.07828-1.17157-2.82843-0.75015-0.75014-1.76756-1.17157-2.82843-1.17157-1.06087 0-2.07828 0.42143-2.82843 1.17157-0.75014 0.75015-1.17157 1.76756-1.17157 2.82843 0 2.4965 2.7695 5.0965 3.6995 5.8995 0.08664 0.0651 0.1921 0.1004 0.3005 0.1004 0.1084 0 0.21386-0.0353 0.3005-0.1004z",
+                                                  "width": 9.333333333333334,
+                                                  "height": 11.666549841562908,
+                                                  "stroke": "#7b78a8ff",
+                                                  "strokeWidth": 1.1666666666666667,
+                                                  "strokeLinejoin": "round",
+                                                  "strokeLinecap": "round"
+                                                },
+                                                {
+                                                  "type": "path",
+                                                  "id": "FD4yh",
+                                                  "x": 5.25,
+                                                  "y": 4.083333333333334,
+                                                  "name": "Vector",
+                                                  "geometry": "M1.5 3c0.82843 0 1.5-0.67157 1.5-1.5 0-0.82843-0.67157-1.5-1.5-1.5-0.82843 0-1.5 0.67157-1.5 1.5 0 0.82843 0.67157 1.5 1.5 1.5z",
+                                                  "width": 3.5,
+                                                  "height": 3.5,
+                                                  "stroke": "#7b78a8ff",
+                                                  "strokeWidth": 1.1666666666666667,
+                                                  "strokeLinejoin": "round",
+                                                  "strokeLinecap": "round"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "ZjstD",
+                                              "name": "Remote",
+                                              "fill": "#7b78a8ff",
+                                              "content": "Remote",
+                                              "lineHeight": 1.2857142857142858,
+                                              "fontFamily": "Open Sans",
+                                              "fontSize": 14,
+                                              "fontWeight": "600"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "PnuMj",
+                                      "name": "Container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "Y7bUvp",
+                                          "name": "Icon",
+                                          "clip": true,
+                                          "width": 24,
+                                          "height": 24,
+                                          "layout": "none",
+                                          "children": [
+                                            {
+                                              "type": "path",
+                                              "id": "Lp9yU",
+                                              "x": 6,
+                                              "y": 9,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l6 6 6-6",
+                                              "width": 12,
+                                              "height": 6,
+                                              "stroke": "#6764f2ff",
+                                              "strokeWidth": 2,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c9szfq",
+                      "name": "Experiencias",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$radius-xl",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sxFFE",
+                          "name": "Rol",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "bxc95",
+                              "name": "Description",
+                              "width": "fill_container",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "tu4Z6",
+                                  "name": "Title",
+                                  "fill": "#F0EFF8",
+                                  "content": "Rol",
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "lVM2v",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Diseño para las comunidades y los colaboradores que usan Humand, un SaaS de recursos humanos todo en uno. Diseñé desde cero Time Tracking, una miniapp de uso diario que sigue entre las más usadas. En la actualidad, soy responsable de la exploración y el diseño de Celebrations, Universal Search y Automations. También participo en el mantenimiento y la iteración del sistema de diseño, aportando nuevos componentes o mejoras de los existentes. Uso IA en el proceso de diseño para trabajar en varios proyectos y con varios equipos a la vez.",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Wb1o3",
+                          "name": "Timeline item",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "jjz9o",
+                              "name": "Rail",
+                              "width": 16,
+                              "layout": "vertical",
+                              "padding": [
+                                23,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "YVxfy",
+                                  "layoutPosition": "absolute",
+                                  "x": 7.5,
+                                  "y": 29,
+                                  "name": "Line",
+                                  "fill": "#6764F259",
+                                  "width": 1,
+                                  "height": 404
+                                },
+                                {
+                                  "type": "ellipse",
+                                  "id": "kSJFS",
+                                  "name": "Dot",
+                                  "fill": "#6764F2",
+                                  "width": 8,
+                                  "height": 8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "n0VcF",
+                              "name": "Universal Search",
+                              "width": "fill_container",
+                              "fill": "#151529ff",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 16,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "E371GJ",
+                                  "name": "Frame 15",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "P7dp0h",
+                                      "name": "Frame 17",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "WWie4",
+                                          "name": "Title",
+                                          "fill": "#F0EFF8",
+                                          "content": "Automations",
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 16,
+                                          "fontWeight": "700"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "OYcg3",
+                                          "name": "Body",
+                                          "fill": "#7B78A8",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Septiembre 2026 - Actualidad",
+                                          "lineHeight": 1.625,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "fontStyle": "italic"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "nYlkI",
+                                      "name": "Body",
+                                      "fill": "#7B78A8",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Fui incorporado al equipo que construye Automations, la app para automatizar procesos internos de recursos humanos en las empresas, como enviar un mensaje cuando un colaborador solicita vacaciones o cuando Time Tracking genera una alerta.",
+                                      "lineHeight": 1.625,
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "ks63G",
+                                  "name": "Frame 15",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "fW9rZ",
+                                      "name": "Frame 17",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "pvtvz",
+                                          "name": "Title",
+                                          "fill": "#F0EFF8",
+                                          "content": "Celebrations",
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 16,
+                                          "fontWeight": "700"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "c4QSq",
+                                          "name": "Body",
+                                          "fill": "#7B78A8",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Agosto 2026 - Actualidad",
+                                          "lineHeight": 1.625,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "fontStyle": "italic"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "iN1HJ",
+                                      "name": "Body",
+                                      "fill": "#7B78A8",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Celebrations les da a los colaboradores un lugar para felicitarse en días especiales, algo que hasta ahora pasaba por grupos o por mensaje privado. Con el equipo sumamos el feed y el calendario, y mejoramos la configuración del admin, que antes solo mostraba los cumpleaños y aniversarios más cercanos, para adaptarla a este nuevo módulo.",
+                                      "lineHeight": 1.625,
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "nZnUk",
+                                  "name": "Frame 15",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "PraJu",
+                                      "name": "Frame 17",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "VCvIL",
+                                          "name": "Title",
+                                          "fill": "#F0EFF8",
+                                          "content": "Universal Search",
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 16,
+                                          "fontWeight": "700"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "RQTz4",
+                                          "name": "Body",
+                                          "fill": "#7B78A8",
+                                          "textGrowth": "fixed-width",
+                                          "width": "fill_container",
+                                          "content": "Abril 2026 - Actualidad",
+                                          "lineHeight": 1.625,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "500",
+                                          "fontStyle": "italic"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "OGbJx",
+                                      "name": "Body",
+                                      "fill": "#7B78A8",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Universal Search reúne en un solo lugar la búsqueda de Humand. Para llegar ahí hicimos pruebas de usabilidad y entrevistas, para entender cómo buscan los colaboradores dentro de la app. Uno de los objetivos era que el 15% de los usuarios activos del mes hiciera al menos una búsqueda, métrica que se alcanzó y se superó. En los principales clientes el uso llegó a su objetivo, entre el 35% y el 40% de los usuarios activos del mes. Hoy Filipinas y Brasil tienen tienen las comunidades donde más se usa el buscador. Seguimos sumando miniapps a los resultados de búsqueda, y seguimos iterando.",
+                                      "lineHeight": 1.625,
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "x2U9G",
+                          "name": "Timeline item",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Z6CHE",
+                              "name": "Rail",
+                              "width": 16,
+                              "layout": "vertical",
+                              "padding": [
+                                23,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "ellipse",
+                                  "id": "YOd0q",
+                                  "name": "Dot",
+                                  "fill": "#6764F2",
+                                  "width": 8,
+                                  "height": 8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "raU7Z",
+                              "name": "Timetracker",
+                              "width": "fill_container",
+                              "fill": "#151529ff",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Xoame",
+                                  "name": "Frame 16",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "u1cUU",
+                                      "name": "Title",
+                                      "fill": "#F0EFF8",
+                                      "content": "Time Tracking",
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 16,
+                                      "fontWeight": "700"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Z1x5t7",
+                                      "name": "Body",
+                                      "fill": "#7B78A8",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Noviembre 2023 - Abril 2026",
+                                      "lineHeight": 1.625,
+                                      "fontFamily": "Open Sans",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "fontStyle": "italic"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ieinc",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Diseñé desde cero la miniapp de Time Tracking. Los colaboradores la usan a diario para registrar su tiempo de trabajo, y hoy es una de las más usadas de Humand. Durante este tiempo, participé con el equipo iterando la configuración de regiones y sedes, así como diseñando los módulos de Control horario, Work Schedule y Shift Management. También diseñé Kiosk, una app Tablet First dedicada al marcaje del ingreso y de la salida de los colaboradores.",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EEr1d",
+                  "name": "Container",
+                  "width": "fill_container",
+                  "fill": "#0f0e1aff",
+                  "cornerRadius": 12,
+                  "stroke": "#6764f21a",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S1Vgg",
+                      "name": "Container",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "OrAWi",
+                          "name": "Button",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "S6L0pL",
+                              "name": "Container",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "F1oSH",
+                                  "name": "Container",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "fill": "#09090fff",
+                                  "cornerRadius": 10,
+                                  "stroke": "#6764f224",
+                                  "strokeWidth": 1,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "xh2na",
+                                      "name": "ImageWithFallback",
+                                      "clip": true,
+                                      "width": "fill_container",
+                                      "height": 46,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "images/nonconformist.png",
+                                        "mode": "cover"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "LGXjA",
+                                  "name": "Container",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "QMPeU",
+                                      "name": "Heading 3",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "x5TGS",
+                                          "name": "Nonconformist",
+                                          "fill": "#f0eff8ff",
+                                          "content": "Nonconformist",
+                                          "lineHeight": 1.75,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 16,
+                                          "fontWeight": "700"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "b8FIL",
+                                      "name": "Text",
+                                      "clip": true,
+                                      "width": 136.0546875,
+                                      "height": 20,
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "GGEzm",
+                                          "name": "Product Designer",
+                                          "fill": "#8276caff",
+                                          "content": "Product Designer",
+                                          "lineHeight": 1.4285714285714286,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "JpM4F",
+                              "name": "Container",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "TqMlv",
+                                  "name": "Container",
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "alignItems": "end",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "cRDjV",
+                                      "name": "Text",
+                                      "gap": 6,
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "Tm0Zr",
+                                          "name": "CalendarIcon",
+                                          "clip": true,
+                                          "width": 14,
+                                          "height": 14,
+                                          "layout": "none",
+                                          "children": [
+                                            {
+                                              "type": "path",
+                                              "id": "OZR56",
+                                              "x": 4.666666666666667,
+                                              "y": 1.1666666666666667,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l0 2",
+                                              "width": 0,
+                                              "height": 2.3333333333333335,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "u1dS2d",
+                                              "x": 9.333333333333334,
+                                              "y": 1.1666666666666667,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l0 2",
+                                              "width": 0,
+                                              "height": 2.3333333333333335,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "G8Om1",
+                                              "x": 1.75,
+                                              "y": 2.3333333333333335,
+                                              "name": "Vector",
+                                              "geometry": "M8 0l-7 0c-0.55228 0-1 0.44772-1 1l0 7c0 0.5523 0.44772 1 1 1l7 0c0.5523 0 1-0.4477 1-1l0-7c0-0.55228-0.4477-1-1-1z",
+                                              "width": 10.5,
+                                              "height": 10.5,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "cOvKE",
+                                              "x": 1.75,
+                                              "y": 5.833333333333334,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l9 0",
+                                              "width": 10.5,
+                                              "height": 0,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "VecL4",
+                                          "name": "Enero 2022 — Jul 2023",
+                                          "fill": "#7b78a8ff",
+                                          "content": "Enero 2022 — Jul 2023",
+                                          "lineHeight": 1.2857142857142858,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "mtfVp",
+                                      "name": "Text",
+                                      "gap": 6,
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "gfd1t",
+                                          "name": "LocationIcon",
+                                          "clip": true,
+                                          "width": 14,
+                                          "height": 14,
+                                          "layout": "none",
+                                          "children": [
+                                            {
+                                              "type": "path",
+                                              "id": "qfBZk",
+                                              "x": 2.3333333333333335,
+                                              "y": 1.1666666666666667,
+                                              "name": "Vector",
+                                              "geometry": "M4.3005 9.8995c0.93-0.803 3.6995-3.403 3.6995-5.8995 0-1.06087-0.42143-2.07828-1.17157-2.82843-0.75015-0.75014-1.76756-1.17157-2.82843-1.17157-1.06087 0-2.07828 0.42143-2.82843 1.17157-0.75014 0.75015-1.17157 1.76756-1.17157 2.82843 0 2.4965 2.7695 5.0965 3.6995 5.8995 0.08664 0.0651 0.1921 0.1004 0.3005 0.1004 0.1084 0 0.21386-0.0353 0.3005-0.1004z",
+                                              "width": 9.333333333333334,
+                                              "height": 11.666549841562908,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "lLPJi",
+                                              "x": 5.25,
+                                              "y": 4.083333333333334,
+                                              "name": "Vector",
+                                              "geometry": "M1.5 3c0.82843 0 1.5-0.67157 1.5-1.5 0-0.82843-0.67157-1.5-1.5-1.5-0.82843 0-1.5 0.67157-1.5 1.5 0 0.82843 0.67157 1.5 1.5 1.5z",
+                                              "width": 3.5,
+                                              "height": 3.5,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "jaUD5",
+                                          "name": "Buenos Aires, Argentina",
+                                          "fill": "#7b78a8ff",
+                                          "content": "Buenos Aires, Argentina",
+                                          "lineHeight": 1.2857142857142858,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Vh4hj",
+                                  "name": "Container",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "G6Evj",
+                                      "name": "Icon",
+                                      "clip": true,
+                                      "width": 24,
+                                      "height": 24,
+                                      "layout": "none",
+                                      "children": [
+                                        {
+                                          "type": "path",
+                                          "id": "t74Stk",
+                                          "x": 6,
+                                          "y": 9,
+                                          "name": "Vector",
+                                          "geometry": "M0 0l6 6 6-6",
+                                          "width": 12,
+                                          "height": 6,
+                                          "stroke": "#6764f2ff",
+                                          "strokeWidth": 2,
+                                          "strokeLinejoin": "round",
+                                          "strokeLinecap": "round"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bvoNA",
+                      "name": "Experiencias Nonconformist",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$radius-xl",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "w6r63d",
+                          "name": "Tarjeta de débito",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "O49CM",
+                              "name": "Rail",
+                              "width": 16,
+                              "layout": "vertical",
+                              "padding": [
+                                23,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "se7X4",
+                                  "layoutPosition": "absolute",
+                                  "x": 7.5,
+                                  "y": 29,
+                                  "name": "Line",
+                                  "fill": "#6764F259",
+                                  "width": 1,
+                                  "height": 120
+                                },
+                                {
+                                  "type": "ellipse",
+                                  "id": "Ly7lm",
+                                  "name": "Dot",
+                                  "fill": "#6764F2",
+                                  "width": 8,
+                                  "height": 8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Puzfp",
+                              "name": "Tarjeta de débito",
+                              "width": "fill_container",
+                              "fill": "#151529ff",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ACb5v",
+                                  "name": "Title",
+                                  "fill": "#F0EFF8",
+                                  "content": "Tarjeta de débito",
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "PdHGx",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "En Nonconformist fui parte del equipo de diseño de Banco Supervielle. Desde el inicio trabajé en su tarjeta de débito digital, una de las primeras tarjetas de débito digitales de un banco en el país. Permite pausar la tarjeta, avisar un viaje, ver los movimientos y mostrar los datos según Visa. Con el equipo de UX Research hicimos pruebas de usabilidad y entrevistas a clientes del banco.",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Au9o8",
+                          "name": "PaaS",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "nM9Bm",
+                              "name": "Rail",
+                              "width": 16,
+                              "layout": "vertical",
+                              "padding": [
+                                23,
+                                0,
+                                0,
+                                0
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "ellipse",
+                                  "id": "HYnRw",
+                                  "name": "Dot",
+                                  "fill": "#6764F2",
+                                  "width": 8,
+                                  "height": 8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "CqUWe",
+                              "name": "PaaS",
+                              "width": "fill_container",
+                              "fill": "#151529ff",
+                              "cornerRadius": "$radius-sm",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": "$radius-xl",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Dy9bv",
+                                  "name": "Title",
+                                  "fill": "#F0EFF8",
+                                  "content": "PaaS",
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 16,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "h6fbB",
+                                  "name": "Body",
+                                  "fill": "#7B78A8",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Participé en la creación de PaaS, el sandbox B2B de Banco Supervielle, en etapa de POC. Tenía que servir a quien lo contrata y a quien lo usa, equipos de negocio y desarrolladores, y cumplir los estándares de un sandbox. Para eso investigamos a los dos perfiles.",
+                                  "lineHeight": 1.625,
+                                  "fontFamily": "Open Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uV7Et",
+                  "name": "Container",
+                  "width": "fill_container",
+                  "fill": "#0f0e1aff",
+                  "cornerRadius": 12,
+                  "stroke": "#6764f21a",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bxmCy",
+                      "name": "Container",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Sd3hM",
+                          "name": "Button",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "O7PIjW",
+                              "name": "Container",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "C9BWJq",
+                                  "name": "Container",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "fill": "#09090fff",
+                                  "cornerRadius": 10,
+                                  "stroke": "#6764f224",
+                                  "strokeWidth": 1,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "UTXzy",
+                                      "name": "ImageWithFallback",
+                                      "clip": true,
+                                      "width": "fill_container",
+                                      "height": 46,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "images/instakash.png",
+                                        "mode": "cover"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "oGmFa",
+                                  "name": "Container",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "GqLRk",
+                                      "name": "Heading 3",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "R742aV",
+                                          "name": "Instakash",
+                                          "fill": "#f0eff8ff",
+                                          "content": "Instakash",
+                                          "lineHeight": 1.75,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 16,
+                                          "fontWeight": "700"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "EJ9zO",
+                                      "name": "Text",
+                                      "clip": true,
+                                      "width": 88.5703125,
+                                      "height": 20,
+                                      "layout": "vertical",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "nTaN9",
+                                          "name": "UX/UI Design",
+                                          "fill": "#8276caff",
+                                          "content": "UX/UI Design",
+                                          "lineHeight": 1.4285714285714286,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ba5ba",
+                              "name": "Container",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "npSsI",
+                                  "name": "Container",
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "alignItems": "end",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "J9S2A1",
+                                      "name": "Text",
+                                      "gap": 6,
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "do2sR",
+                                          "name": "CalendarIcon",
+                                          "clip": true,
+                                          "width": 14,
+                                          "height": 14,
+                                          "layout": "none",
+                                          "children": [
+                                            {
+                                              "type": "path",
+                                              "id": "a9L1cg",
+                                              "x": 4.666666666666667,
+                                              "y": 1.1666666666666667,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l0 2",
+                                              "width": 0,
+                                              "height": 2.3333333333333335,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "U25PhV",
+                                              "x": 9.333333333333334,
+                                              "y": 1.1666666666666667,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l0 2",
+                                              "width": 0,
+                                              "height": 2.3333333333333335,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "sdsPn",
+                                              "x": 1.75,
+                                              "y": 2.3333333333333335,
+                                              "name": "Vector",
+                                              "geometry": "M8 0l-7 0c-0.55228 0-1 0.44772-1 1l0 7c0 0.5523 0.44772 1 1 1l7 0c0.5523 0 1-0.4477 1-1l0-7c0-0.55228-0.4477-1-1-1z",
+                                              "width": 10.5,
+                                              "height": 10.5,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "I7v754",
+                                              "x": 1.75,
+                                              "y": 5.833333333333334,
+                                              "name": "Vector",
+                                              "geometry": "M0 0l9 0",
+                                              "width": 10.5,
+                                              "height": 0,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "y5Te48",
+                                          "name": "Dic 2019 — Oct 2023",
+                                          "fill": "#7b78a8ff",
+                                          "content": "Dic 2019 — Oct 2023",
+                                          "lineHeight": 1.2857142857142858,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "Xkb7o",
+                                      "name": "Text",
+                                      "gap": 6,
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "frame",
+                                          "id": "kZVP0",
+                                          "name": "LocationIcon",
+                                          "clip": true,
+                                          "width": 14,
+                                          "height": 14,
+                                          "layout": "none",
+                                          "children": [
+                                            {
+                                              "type": "path",
+                                              "id": "f0Xp5a",
+                                              "x": 2.3333333333333335,
+                                              "y": 1.1666666666666667,
+                                              "name": "Vector",
+                                              "geometry": "M4.3005 9.8995c0.93-0.803 3.6995-3.403 3.6995-5.8995 0-1.06087-0.42143-2.07828-1.17157-2.82843-0.75015-0.75014-1.76756-1.17157-2.82843-1.17157-1.06087 0-2.07828 0.42143-2.82843 1.17157-0.75014 0.75015-1.17157 1.76756-1.17157 2.82843 0 2.4965 2.7695 5.0965 3.6995 5.8995 0.08664 0.0651 0.1921 0.1004 0.3005 0.1004 0.1084 0 0.21386-0.0353 0.3005-0.1004z",
+                                              "width": 9.333333333333334,
+                                              "height": 11.666549841562908,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            },
+                                            {
+                                              "type": "path",
+                                              "id": "I84Xm",
+                                              "x": 5.25,
+                                              "y": 4.083333333333334,
+                                              "name": "Vector",
+                                              "geometry": "M1.5 3c0.82843 0 1.5-0.67157 1.5-1.5 0-0.82843-0.67157-1.5-1.5-1.5-0.82843 0-1.5 0.67157-1.5 1.5 0 0.82843 0.67157 1.5 1.5 1.5z",
+                                              "width": 3.5,
+                                              "height": 3.5,
+                                              "stroke": "#7b78a8ff",
+                                              "strokeWidth": 1.1666666666666667,
+                                              "strokeLinejoin": "round",
+                                              "strokeLinecap": "round"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "Neblg",
+                                          "name": "Perú (Remoto)",
+                                          "fill": "#7b78a8ff",
+                                          "content": "Perú (Remoto)",
+                                          "lineHeight": 1.2857142857142858,
+                                          "fontFamily": "Open Sans",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "qR8O3",
+                                  "name": "Container",
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "tJwSW",
+                                      "name": "Icon",
+                                      "clip": true,
+                                      "width": 24,
+                                      "height": 24,
+                                      "layout": "none",
+                                      "children": [
+                                        {
+                                          "type": "path",
+                                          "id": "WEV21",
                                           "x": 6,
                                           "y": 9,
                                           "name": "Vector",
