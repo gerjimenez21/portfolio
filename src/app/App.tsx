@@ -1194,7 +1194,6 @@ function OtherProjectsSection() {
       alt: "Solitaire Home Story",
       title: "Solitaire Home Story",
       type: "Product Design · Mobile",
-      border: "border-b",
       pad: false,
     },
     {
@@ -1202,7 +1201,6 @@ function OtherProjectsSection() {
       alt: "Billboard",
       title: "Billboard",
       type: "Product Design · Mobile & Web",
-      border: "border-b",
       pad: false,
     },
     {
@@ -1210,7 +1208,6 @@ function OtherProjectsSection() {
       alt: "Louderband",
       title: "Louderband",
       type: "Product Design · Mobile & Web",
-      border: "",
       pad: true,
     },
     {
@@ -1218,7 +1215,6 @@ function OtherProjectsSection() {
       alt: "Habitium",
       title: "Habitium",
       type: "Digital design · Web",
-      border: "border-t",
       pad: false,
     },
   ];
@@ -1227,52 +1223,33 @@ function OtherProjectsSection() {
     <section className={`${SECTION_PAD} pb-16 w-full`}>
       <div className={SECTION_INNER}>
       <FadeIn>
-        <p
-          className="font-normal leading-[16.5px] text-[#7b78a8] text-[11px] tracking-[2px] uppercase"
-          style={{
-            fontFamily: "'Open Sans', sans-serif",
-            fontVariationSettings: '"wdth" 100',
-          }}
-        >
-          Otros proyectos en los que trabajé
-        </p>
-        <div className="flex flex-col pt-3 w-full">
-          {rows.map(
-            ({ img, alt, title, type, border, pad }) => (
-              <div
-                key={title}
-                className={`flex items-center justify-between py-3 w-full border-[rgba(103,100,242,0.08)] border-solid ${border}`}
-              >
-                <div className="flex gap-3 items-center">
-                  <OtherProjectLogo
-                    src={img}
-                    alt={alt}
-                    pad={pad}
-                  />
-                  <div className="flex flex-col items-start">
-                    <p
-                      className="font-semibold leading-[21px] text-[#bbb5df] text-[14px] whitespace-nowrap"
-                      style={{
-                        fontFamily: "'Open Sans', sans-serif",
-                        fontVariationSettings: '"wdth" 100',
-                      }}
-                    >
-                      {title}
-                    </p>
-                    <p
-                      className="font-normal leading-[16.5px] text-[#3d3a5c] text-[11px]"
-                      style={{
-                        fontFamily: "'Open Sans', sans-serif",
-                        fontVariationSettings: '"wdth" 100',
-                      }}
-                    >
-                      {type}
-                    </p>
-                  </div>
-                </div>
+        <SectionLabel>Otros proyectos en los que trabajé</SectionLabel>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-5 w-full">
+          {rows.map(({ img, alt, title, type, pad }) => (
+            <div key={title} className="flex gap-3 items-center min-w-0">
+              <OtherProjectLogo src={img} alt={alt} pad={pad} />
+              <div className="flex flex-col items-start min-w-0">
+                <p
+                  className="font-semibold leading-6 text-[#bbb5df] text-[16px]"
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                    fontVariationSettings: '"wdth" 100',
+                  }}
+                >
+                  {title}
+                </p>
+                <p
+                  className="font-normal leading-5 text-[#7b78a8] text-[14px]"
+                  style={{
+                    fontFamily: "'Open Sans', sans-serif",
+                    fontVariationSettings: '"wdth" 100',
+                  }}
+                >
+                  {type}
+                </p>
               </div>
-            ),
-          )}
+            </div>
+          ))}
         </div>
       </FadeIn>
       </div>
