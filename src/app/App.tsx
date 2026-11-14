@@ -119,11 +119,9 @@ export const EXPERIENCE: {
     period: "Enero 2022 — Jul 2023",
     location: "Buenos Aires, Argentina",
     logo: imgLogoNonconformist,
-    paragraphs: [
-      "En Nonconformist, formé parte del equipo que diseñó desde cero la Tarjeta de Débito Digital de Banco Supervielle, un producto que en ese momento no existía.",
-      "Diseñamos e integramos funcionalidades clave como la posibilidad de exponer y ocultar los datos de la tarjeta, y visualizar los movimientos asociados. Para lograrlo, realizamos pruebas de usabilidad y entrevistas con usuarios, con el objetivo de entender sus necesidades reales y construir un producto centrado en quienes lo usan.",
-      "También trabajé en el diseño de un sandbox de Payments as a Service, que permitía a distintas billeteras digitales integrarse y competir en el mercado.",
-    ],
+    paragraphs: [],
+    summary:
+      "En Nonconformist fui product designer para Banco Supervielle y team owner dentro de la agencia. Con el equipo diseñamos desde cero la tarjeta de débito digital del banco, y trabajé en un sandbox de Payments as a Service para que distintas billeteras digitales pudieran integrarse. Como team owner fui mentor de otros diseñadores, con menos experiencia: escuchaba lo que necesitaban en lo técnico y les daba una idea de por dónde seguir con su carrera.",
     tags: [
       "Figma",
       "Design Thinking",
@@ -135,13 +133,30 @@ export const EXPERIENCE: {
   {
     company: "Instakash",
     role: "UX/UI Design",
-    period: "Dic 2019 — Oct 2023",
+    period: "Oct 2019 — Sep 2023",
     location: "Perú (Remoto)",
     logo: imgLogoInstakash,
-    paragraphs: [
-      "En Instakash, una casa de cambio digital de Perú, participé en distintas etapas de evolución del producto: desde el diseño de las primeras versiones hasta sus sucesivas iteraciones.",
-      "A medida que la plataforma escalaba, di forma a un Design System que permitió mantener consistencia visual y de interacción entre los distintos productos ofrecidos por la casa de cambio, coordinando el trabajo con los equipos de desarrollo y producto.",
-      "Combiné investigación cualitativa (surveys) y cuantitativa (seguimiento de métricas) para validar decisiones de diseño y alinear cada iteración con los objetivos de negocio.",
+    paragraphs: [],
+    summary:
+      "En Instakash, una casa de cambio digital de Perú, trabajé como independiente de octubre de 2019 a septiembre de 2023, desde la primera versión del producto y, después del lanzamiento de mayo de 2021, en la plataforma.",
+    groups: [
+      [
+        {
+          title: "UX Designer",
+          period: "Mayo 2021 - Septiembre 2023 · Lima, en remoto",
+          body: "Adecué el nuevo sistema de diseño a partir de los cambios de 2020, para el lanzamiento de mayo de 2021, y cerré el diseño de esa versión. Seguí en la plataforma con los flujos, los wireframes y los cambios a partir de cómo se usaba, para sumar servicios. También hice piezas de campañas digitales y videos animados para promover los servicios y enseñar a usar la plataforma.",
+        },
+        {
+          title: "Diseñador digital",
+          period: "Diciembre 2019 - Mayo 2021",
+          body: "Diseñaba las piezas de redes sociales y de las campañas de marketing, así como todo el contenido visual de la marca.",
+        },
+        {
+          title: "UI Designer",
+          period: "Octubre 2019 - Diciembre 2019",
+          body: "Hice la interfaz y el landing de la primera versión de Instakash.net, y el sistema de diseño de esa versión. Para el lanzamiento armé las piezas de redes, los banners y las animaciones didácticas.",
+        },
+      ],
     ],
     tags: ["React", "Vue.js", "SCSS", "Figma", "GraphQL"],
   },
@@ -1193,28 +1208,28 @@ function OtherProjectsSection() {
       img: imgSolitaire,
       alt: "Solitaire Home Story",
       title: "Solitaire Home Story",
-      type: "Product Design · Mobile",
+      type: "Product Design · Responsive Web",
       pad: false,
     },
     {
       img: imgBillboard,
       alt: "Billboard",
       title: "Billboard",
-      type: "Product Design · Mobile & Web",
+      type: "Product Design · Web & App",
       pad: false,
     },
     {
       img: imgLouderband,
       alt: "Louderband",
       title: "Louderband",
-      type: "Product Design · Mobile & Web",
+      type: "Product Design · Web & App",
       pad: true,
     },
     {
       img: imgHabitium,
       alt: "Habitium",
       title: "Habitium",
-      type: "Digital design · Web",
+      type: "Digital design",
       pad: false,
     },
   ];
@@ -1224,13 +1239,13 @@ function OtherProjectsSection() {
       <div className={SECTION_INNER}>
       <FadeIn>
         <SectionLabel>Otros proyectos en los que trabajé</SectionLabel>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-5 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-5 w-full">
           {rows.map(({ img, alt, title, type, pad }) => (
             <div key={title} className="flex gap-3 items-center min-w-0">
               <OtherProjectLogo src={img} alt={alt} pad={pad} />
               <div className="flex flex-col items-start min-w-0">
                 <p
-                  className="font-semibold leading-6 text-[#bbb5df] text-[16px]"
+                  className="font-semibold leading-6 text-[#bbb5df] text-[16px] whitespace-nowrap"
                   style={{
                     fontFamily: "'Open Sans', sans-serif",
                     fontVariationSettings: '"wdth" 100',
